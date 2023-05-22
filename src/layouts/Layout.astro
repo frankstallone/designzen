@@ -1,36 +1,155 @@
 ---
-export interface Props {
-	title: string;
-}
+import "../css/reset.css";
+import "../css/future.css";
+import "../css/global.css";
+import "../css/variables.css";
+import "../css/blocks/box.css";
+import "../css/blocks/card.css";
+import "../css/blocks/center.css";
+import "../css/blocks/grid.css";
+import "../css/blocks/navigation.css";
+import "../css/blocks/prose.css";
+import "../css/blocks/cluster.css";
+import "../css/blocks/fifty-sevenfive.css";
+import "../css/blocks/cover.css";
+import "../css/blocks/reel.css";
+import "../css/blocks/stack.css";
+import "../css/blocks/switcher.css";
+import "../css/utilities/content.css";
+import "../css/utilities/flow.css";
+import "../css/utilities/region.css";
+import "../css/utilities/wrapper.css";
+import "../css/utility.css";
+import "../css/exceptions.css";
 
-const { title } = Astro.props;
+// interface Props {
+// 	meta: {
+// 		title?: string;
+// 		description?: string;
+// 		canonicalURL?: URL | string;
+// 		image?: string;
+// 	};
+// }
+// const { meta } = Astro.props;
+
+const title = "Pixel perfect UI to scale fast.";
+// const title = meta.title || "Pixel perfect UI to scale fast.";
+const description = "Pixel perfect UI to scale fast.";
+// const description = meta.description || "Pixel perfect UI to scale fast.";
+const canonicalURL = "https://designzen.com";
+// const canonicalURL = meta.canonicalURL || "https://designzen.com";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
+		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-thin.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-thin-italic.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-extralight.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-extralight-italic.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-light.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-light-italic.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-regular.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-italic.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-medium.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-medium.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-bold.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-bold-italic.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-black.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="/fonts/future/the-future-black-italic.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
+		<a href="#main" class="sr-only sr-only-focusable">Skip to content</a>
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
