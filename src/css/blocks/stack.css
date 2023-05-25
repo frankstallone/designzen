@@ -9,5 +9,5 @@
 }
 
 .stack > * + * {
-  margin-block-start: var(--space-3xs, 1.5rem);
+  margin-block-start: var(--space-l-2xl, 1.5rem);
 }

@@ -10,7 +10,7 @@
   flex-basis: calc((var(--threshold) - 100%) * 999);
 }
 
-.switcher > :nth-last-child(n + 3),
-.switcher > :nth-last-child(n + 3) ~ * {
+.switcher > :nth-last-child(n + 4),
+.switcher > :nth-last-child(n + 4) ~ * {
   flex-basis: 100%;
 }
