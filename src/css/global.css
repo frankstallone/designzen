@@ -32,14 +32,16 @@ h3 {
 
 h1 {
   font-size: var(--step-6);
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: var(--step-5);
+  font-size: var(--step-4);
 }
 
 h3 {
-  font-size: var(--step-4);
+  font-size: var(--step-3);
 }
 
 /* Set line lengths */
@@ -132,17 +134,47 @@ textarea:focus {
   outline: 2px solid var(--warmbreeze400);
 }
 
-button:not(.mobile-open),
-.button {
+button {
   display: block;
   max-width: fit-content;
   --tracking: 0;
   letter-spacing: var(--tracking);
-  font-size: var(--step--1);
-  background: var(--bronzeLoud);
-  color: var(--bronze900);
-  border-radius: 40px;
+  font-size: var(--step--3);
+  font-weight: 600;
+  background: var(--yellow500);
+  color: var(--yellow1000);
   border: none;
   padding: var(--space-xs) var(--space-xl);
   text-decoration: none;
+}
+
+button:hover,
+button:active,
+button:focus {
+  background: var(--yellow600);
+  color: var(--yellow1200);
+}
+
+#zen {
+  width: 245dvw;
+  height: 245dvh;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 700px) {
+  #zen {
+    width: 250dvw;
+    height: 250dvh;
+    top: 105%;
+  }
+}
+
+@media (max-width: 400px) {
+  #zen {
+    width: 300dvw;
+    height: 300dvh;
+    top: 78%;
+  }
 }
