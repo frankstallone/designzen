@@ -27,7 +27,7 @@ h3 {
   font-family: var(--font-display);
   line-height: var(--line-height-small);
   letter-spacing: var(--tracking-s);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h1 {
@@ -53,8 +53,10 @@ blockquote:not([class]) {
 
 h1,
 h2,
-h3 {
+h3,
+blockquote {
   max-inline-size: 30ch;
+  text-wrap: balance;
 }
 
 /* More generic elements */
@@ -85,11 +87,10 @@ svg {
 a {
   color: currentcolor;
   text-decoration: none;
-  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 :focus {
@@ -134,7 +135,7 @@ textarea:focus {
   outline: 2px solid var(--warmbreeze400);
 }
 
-button {
+.button {
   display: block;
   max-width: fit-content;
   --tracking: 0;
@@ -148,11 +149,17 @@ button {
   text-decoration: none;
 }
 
-button:hover,
-button:active,
-button:focus {
+.button:hover,
+.button:active,
+.button:focus {
   background: var(--yellow600);
   color: var(--yellow1200);
+}
+
+.button.disabled {
+  background: var(--gray200);
+  color: var(--gray700);
+}
 }
 
 #zen {

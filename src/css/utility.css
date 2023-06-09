@@ -327,6 +327,34 @@ Utilities for controlling how an element handles content that is too large for t
   text-align: left;
 }
 
+.text-strike {
+  text-decoration: line-through;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.overline {
+  text-decoration-line: overline;
+}
+
+.line-through {
+  text-decoration-line: line-through;
+}
+
+.no-underline {
+  text-decoration-line: none;
+}
+
 .font-weight-base {
   font-weight: var(--font-weight-base);
 }
@@ -505,29 +533,18 @@ Utilities for controlling how an element handles content that is too large for t
 
 /* Spot colors */
 
-.spot-color-primary-gray {
-  --spot-color: var(--gray100);
-  --spot-color-text: var(--gray1100);
+.spot-color-default {
+  --spot-color: var(--color-light);
+  --spot-color-text: var(--color-dark);
 }
 
-/* .spot-color-primary-gray h1,
-.spot-color-primary-gray h2,
-.spot-color-primary-gray h3 {
-  background-color: var(--gray700);
-  background-image: linear-gradient(0deg, var(--gray500), var(--gray700));
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-} */
-
-.spot-color-primary-gray {
+.spot-color-gray {
   --spot-color: var(--gray100);
   --spot-color-text: var(--gray1100);
+  --spot-color-border: var(--gray200);
 }
 
-.spot-color-primary-gray-dark {
+.spot-color-gray-dark {
   --spot-color: var(--gray900);
   --spot-color-text: var(--gray100);
 }
@@ -543,8 +560,9 @@ Utilities for controlling how an element handles content that is too large for t
 }
 
 .spot-color-yellow {
-  --spot-color: var(--yellow200);
+  --spot-color: var(--yellow100);
   --spot-color-text: var(--yellow1100);
+  --spot-color-border: var(--yellow200);
 }
 
 .spot-color-yellow-dark {
@@ -567,6 +585,10 @@ Utilities for controlling how an element handles content that is too large for t
   color: var(--spot-color-text, var(--color-dark));
 }
 
+.spot--border-bottom {
+  border-bottom: 3px solid var(--spot-color-border);
+}
+
 .section > .slant {
   transform: translateY(-8px);
 }
@@ -587,7 +609,7 @@ Utilities for controlling how an element handles content that is too large for t
   border-radius: var(--border-radius);
 }
 
-.lines-overlay {
+/* .lines-overlay {
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -602,12 +624,12 @@ Utilities for controlling how an element handles content that is too large for t
   height: 400%;
   opacity: 0.015;
   background-blend-mode: screen;
-  background: url('/images/loumarc-signs-lines.svg') no-repeat;
-}
-
+  background: url('/images/[imagehere]') no-repeat;
+} */
+/* 
 .lines-overlay[data-opacity='dark']::before {
   opacity: 0.5;
-}
+} */
 
 /* Object Fit
 Utilities for controlling how a replaced element's content should be resized. */

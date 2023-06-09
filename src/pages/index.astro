@@ -6,7 +6,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 	<main role="main" id="main">
 		<section
-			class="cover flow text-center relative spot-color-primary-gray spot--inner z-10 overflow-hidden"
+			class="cover flow text-center relative spot-color-gray spot--inner z-10 overflow-hidden"
 		>
 			<div class="stack items-center z-10 wrapper" data-inline="md">
 				<span class="z-10 font-weight-bold step-0">Designzen</span>
@@ -28,7 +28,10 @@ import Layout from '../layouts/Layout.astro';
 					<li class="box" data-padding="m-l">
 						Subscribe &amp; request as many designs as you'd like.
 					</li>
-					<li class="box spot-color-blue-dark" data-padding="m-l">
+					<li
+						class="box spot-color-blue-dark spot--inner"
+						data-padding="m-l"
+					>
 						Turnaround in a few days, on average, Monday — Friday.
 					</li>
 					<li class="box" data-padding="m-l">
@@ -141,6 +144,7 @@ import Layout from '../layouts/Layout.astro';
 				></path>
 			</svg>
 		</section>
+		<!-- Trust us -->
 		<section
 			class="spot-color-blue-dark spot--inner flex overflow-hidden relative z-10"
 		>
@@ -299,14 +303,10 @@ import Layout from '../layouts/Layout.astro';
 				</li>
 			</ul>
 		</section>
-		<section class="center region box">
-			<h2 class="box">How we work</h2>
+		<section class="center region box stack">
+			<h2>How we work</h2>
 			<ul role="list" class="switcher" data-threshold="l">
-				<li
-					class="flow box flex flex-col justify-center align-center"
-					data-padding="m-l"
-					style="background: url(/images/blob-01.svg); background-repeat: no-repeat; background-size: contain; background-position: center;"
-				>
+				<li class="flow box" data-padding="m-l">
 					<h3>100% async</h3>
 					<p>
 						Do you desire less meetings? Us, too. We work without
@@ -330,40 +330,139 @@ import Layout from '../layouts/Layout.astro';
 			</ul>
 		</section>
 		<div class="spot-color-purple spot--inner">
-			<section class="center region box">
-				<h2 class="box">Benefits</h2>
+			<section class="center region box stack">
+				<h2>Benefits</h2>
 				<ul role="list" class="grid">
-					<li class="flow box" data-padding="m-l">
+					<li
+						class="flow box spot-color-purple-dark spot--inner"
+						data-padding="m-l"
+					>
 						<h3>Simple</h3>
 						<p>
 							We cut out contracts, scoping, change orders, etc.
 						</p>
 					</li>
-					<li class="flow box" data-padding="m-l">
+					<li
+						class="flow box spot-color-purple-dark spot--inner"
+						data-padding="m-l"
+					>
 						<h3>Fast</h3>
 						<p>Most requests take a few days.</p>
 					</li>
-					<li class="flow box" data-padding="m-l">
+					<li
+						class="flow box spot-color-purple-dark spot--inner"
+						data-padding="m-l"
+					>
 						<h3>Dynamic</h3>
 						<p>
 							Easy to manage subscription. Pause or cancel any
 							time.
 						</p>
 					</li>
-					<li class="flow box" data-padding="m-l">
+					<li
+						class="flow box spot-color-purple-dark spot--inner"
+						data-padding="m-l"
+					>
 						<h3>Dynamic</h3>
 						<p>
 							Easy to manage subscription. Pause or cancel any
 							time.
 						</p>
 					</li>
-					<li class="flow box" data-padding="m-l">
+					<li
+						class="flow box spot-color-purple-dark spot--inner"
+						data-padding="m-l"
+					>
 						<h3>Revise</h3>
 						<p>We'll continue to iterate until your satisfied.</p>
 					</li>
-					<li class="flow box" data-padding="m-l">
+					<li
+						class="flow box spot-color-purple-dark spot--inner"
+						data-padding="m-l"
+					>
 						<h3>Fixed</h3>
 						<p>Pay the same price, each month.</p>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="spot-color-gray spot--inner">
+			<section class="center region box stack">
+				<h2>Visual and product design</h2>
+				<ul role="list" class="grid">
+					<li class="flow box spot--border-bottom">
+						Marketing websites
+					</li>
+					<li class="flow box spot--border-bottom">Logos</li>
+					<li class="flow box spot--border-bottom">Web apps</li>
+					<li class="flow box spot--border-bottom">Mobile apps</li>
+					<li class="flow box spot--border-bottom">Design systems</li>
+					<li class="flow box spot--border-bottom">UI kits</li>
+					<li class="flow box spot--border-bottom">Wireframes</li>
+					<li class="flow box spot--border-bottom">SaaS apps</li>
+					<li class="flow box spot--border-bottom">
+						Brand guidelines
+					</li>
+					<li class="flow box spot--border-bottom">Styleguides</li>
+					<li class="flow box spot--border-bottom">
+						Social media graphics
+					</li>
+					<li class="flow box spot--border-bottom">
+						Soon: Development
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="spot-color-yellow spot--inner">
+			<section class="center region box stack">
+				<h2>Membership levels</h2>
+				<ul role="list" class="grid">
+					<li class="flow box spot--border-bottom">
+						<h3>Design subscription</h3>
+						<p>No minimum commitment. Pause or cancel anytime.</p>
+						<h4>
+							$3,499/m <small
+								style="color: var(--gray700);"
+								class="text-strike italic step--1 font-weight-light"
+								>$5,599/m</small
+							>
+						</h4>
+						<p class="text-center">
+							<small
+								style="color: var(--yellow800);"
+								class="step--1">Pause or cancel anytime</small
+							>
+						</p>
+						<p><a href="#" class="button">Get started</a></p>
+						<p class="text-center font-weight-medium step--1">
+							<a href="#">Book a call</a>
+						</p>
+					</li>
+					<li class="flow box spot--border-bottom">
+						<h3>Development add-on</h3>
+						<p>Coming soon! Requires design subscription.</p>
+						<h4 class="text-strike">$999/m</h4>
+						<p class="text-center">
+							<small
+								style="color: var(--yellow800);"
+								class="step--1">Pause or cancel anytime</small
+							>
+						</p>
+						<p>
+							<div class="button disabled">Get started</div>
+						</p>
+						<p class="text-center font-weight-medium step--1">
+							<a href="#">Book a call</a>
+						</p>
+					</li>
+					<li class="flow box spot--border-bottom">
+						<h3>Book a call</h3>
+						<p>
+							Learn more about Designzen and how it can help you.
+						</p>
+						<p class="text-center">
+							<a href="#" class="button">Book a call</a>
+						</p>
 					</li>
 				</ul>
 			</section>
