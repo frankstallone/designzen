@@ -37,6 +37,10 @@
 
 /* Box */
 
+.box[data-padding='m-l'] {
+  --padding: var(--space-m-l);
+}
+
 .box[data-padding='xl'] {
   --padding: var(--space-xl);
 }
@@ -55,7 +59,11 @@
   --gap: 0;
 }
 
-.switcher[data-trenshold='xl'] {
+.switcher[data-threshold='l'] {
+  --threshold: 40rem;
+}
+
+.switcher[data-threshold='xl'] {
   --threshold: 50rem;
 }
 
@@ -514,14 +522,44 @@ Utilities for controlling how an element handles content that is too large for t
   -moz-text-fill-color: transparent;
 } */
 
+.spot-color-primary-gray {
+  --spot-color: var(--gray100);
+  --spot-color-text: var(--gray1100);
+}
+
 .spot-color-primary-gray-dark {
   --spot-color: var(--gray900);
   --spot-color-text: var(--gray100);
 }
 
+.spot-color-blue {
+  --spot-color: var(--blue200);
+  --spot-color-text: var(--blue1100);
+}
+
 .spot-color-blue-dark {
   --spot-color: var(--blue1100);
   --spot-color-text: var(--blue100);
+}
+
+.spot-color-yellow {
+  --spot-color: var(--yellow200);
+  --spot-color-text: var(--yellow1100);
+}
+
+.spot-color-yellow-dark {
+  --spot-color: var(--yellow1100);
+  --spot-color-text: var(--yellow100);
+}
+
+.spot-color-purple {
+  --spot-color: var(--purple200);
+  --spot-color-text: var(--purple1100);
+}
+
+.spot-color-purple-dark {
+  --spot-color: var(--purple1100);
+  --spot-color-text: var(--purple100);
 }
 
 .spot--inner {
@@ -646,4 +684,14 @@ Utilities for controlling the stack order of an element. */
 
 .z-auto {
   z-index: auto;
+}
+
+/* SVG */
+
+svg[data-size='l'] {
+  height: 4ex;
+}
+
+svg[data-size='m'] {
+  height: 3ex;
 }
