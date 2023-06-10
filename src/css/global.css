@@ -160,7 +160,6 @@ textarea:focus {
   background: var(--gray200);
   color: var(--gray700);
 }
-}
 
 #zen {
   width: 245dvw;
