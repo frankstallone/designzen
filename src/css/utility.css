@@ -545,7 +545,7 @@ Utilities for controlling how an element handles content that is too large for t
 }
 
 .spot-color-gray-dark {
-  --spot-color: var(--gray900);
+  --spot-color: var(--gray1200);
   --spot-color-text: var(--gray100);
 }
 

@@ -169,17 +169,27 @@ textarea:focus {
   transform: translate(-50%, -50%);
 }
 
-#how-01::after {
-  /* content: url(/images/circle-lines-01.svg); */
-  /* content: '';
+#how-01::after,
+#how-02::after,
+#how-03::after {
+  content: '';
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-image: url(/images/circle-lines-01.svg);
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: center; */
-  /* background-blend-mode: soft-light; */
+  background-position-y: center;
+}
+#how-01::after {
+  background-image: url(/images/circle-lines-01.svg);
+}
+
+#how-02::after {
+  background-image: url(/images/circle-lines-02.svg);
+}
+
+#how-03::after {
+  background-image: url(/images/circle-lines-03.svg);
 }
 
 #circle-01 {

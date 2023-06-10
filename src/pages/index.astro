@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-// import Card from "../components/Card.astro";
 ---
 
 <Layout>
@@ -307,7 +306,7 @@ import Layout from '../layouts/Layout.astro';
 			<h2 class="z-10">How we work</h2>
 			<ul role="list" class="switcher z-10" data-threshold="l">
 				<li
-					class="flow box relative z-10"
+					class="flex flex-col justify-center text-center flow box relative z-10"
 					data-padding="m-l"
 					id="how-01"
 				>
@@ -317,14 +316,22 @@ import Layout from '../layouts/Layout.astro';
 						them.
 					</p>
 				</li>
-				<li class="flow box" data-padding="m-l">
+				<li
+					class="flex flex-col justify-center text-center flow box relative z-10"
+					data-padding="m-l"
+					id="how-02"
+				>
 					<h3>You're in control</h3>
 					<p>
 						We use Notion to manage requests. View active, queued,
 						and completed requests in a simple layout.
 					</p>
 				</li>
-				<li class="flow box" data-padding="m-l">
+				<li
+					class="flex flex-col justify-center text-center flow box relative z-10"
+					data-padding="m-l"
+					id="how-03"
+				>
 					<h3>Bring on the team</h3>
 					<p>
 						Invite your whole team. Anyone who should have a seat at
@@ -332,12 +339,6 @@ import Layout from '../layouts/Layout.astro';
 					</p>
 				</li>
 			</ul>
-			<!-- <object
-				type="image/svg+xml"
-				data="/images/circle-lines-01.svg"
-				class="absolute z-0"
-				style="inset: auto 0 auto auto; width: 60%; margin-block-start: 0;"
-			></object> -->
 		</section>
 		<div class="spot-color-purple spot--inner">
 			<section class="center region box stack">
@@ -430,7 +431,7 @@ import Layout from '../layouts/Layout.astro';
 					<p>Choose the plan that's right for you.</p>
 				</div>
 				<ul role="list" class="switcher">
-					<li class="flex flex-col flow box">
+					<li class="flex flex-col flow box spot--border-bottom">
 						<h3>Design subscription</h3>
 						<p>No minimum commitment. Pause or cancel anytime.</p>
 						<h4>
@@ -447,7 +448,10 @@ import Layout from '../layouts/Layout.astro';
 							>
 						</p>
 						<p class="mt-auto self-center text-center">
-							<a href="#" class="button">Get started</a>
+							<a
+								href="https://buy.stripe.com/9AQeVe92q4B79PO3cd"
+								class="button">Get started</a
+							>
 						</p>
 						<p class="text-center font-weight-medium step--1">
 							<a href="#">Book a call</a>
@@ -484,16 +488,33 @@ import Layout from '../layouts/Layout.astro';
 							<a href="#">Book a call</a>
 						</p>
 					</li>
-					<li class="flow box self-baseline spot--border-bottom">
+					<li
+						class="flow flex flex-col box self-baseline spot--border-bottom"
+					>
 						<h3>Book a call</h3>
 						<p>
 							Learn more about Designzen and how it can help you.
 						</p>
-						<p>
+						<p class="self-center">
 							<a href="#" class="button text-center"
 								>Book a call</a
 							>
 						</p>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="spot-color-gray-dark spot--inner">
+			<section class="center region box stack">
+				<ul role="list" class="switcher">
+					<li class="flex flex-col flow box spot--border-bottom"></li>
+					<li class="flex flex-col flow box spot--border-bottom"></li>
+					<li class="flow flex flex-col box spot--border-bottom">
+						<a
+							href="https://billing.stripe.com/p/login/dR68yAcgi64c6B24gg"
+							>Client login</a
+						>
+						<p><small>Designzen ® 2023</small></p>
 					</li>
 				</ul>
 			</section>
