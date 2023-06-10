@@ -717,3 +717,9 @@ svg[data-size='l'] {
 svg[data-size='m'] {
   height: 3ex;
 }
+
+/* Margin */
+
+.mt-auto {
+  margin-top: auto;
+}
