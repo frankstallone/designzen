@@ -90,7 +90,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 :focus {
@@ -157,8 +157,14 @@ textarea:focus {
 }
 
 .button.disabled {
-  background: var(--gray200);
+  background: var(--gray300);
   color: var(--gray700);
+}
+.button.disabled:hover,
+.button.disabled:active,
+.button.disabled:focus {
+  background: var(--gray400);
+  color: var(--gray800);
 }
 
 #zen {
