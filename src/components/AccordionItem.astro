@@ -1,0 +1,45 @@
+---
+interface Props {
+    header: string;
+    children: any;
+}
+
+const { header } = Astro.props;
+---
+
+<li class="accordion__item box max-inline-size:measure-lg">
+    <h3 class="max-inline-size:measure-lg flow">
+        <button
+            id="accordion-header-1"
+            class="accordion__header"
+            aria-expanded="false"
+            aria-controls="accordion-panel-1"
+            onclick="
+            toggleAccordionItem()
+            "
+        >
+            {header}
+            <svg
+                class="header__toggle-indicator"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+            >
+                <path
+                    fill="currentColor"
+                    d="M256 82.7l22.6 22.6 192 192L493.3 320 448 365.3l-22.6-22.6L256 173.3 86.6 342.6 64 365.3 18.7 320l22.6-22.6 192-192L256 82.7z"
+                ></path>
+            </svg>
+        </button>
+    </h3>
+    <div
+        id="accordion-panel-1"
+        role="region"
+        class="accordion__panel"
+        aria-labelledby="accordion-header-1"
+    >
+        <div class="panel__inner flow">
+            <slot />
+        </div>
+    </div>
+</li>

@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Accordion from '../components/Accordion.astro';
+import AccordionItem from '../components/AccordionItem.astro';
 ---
 
 <Layout>
@@ -412,6 +414,23 @@ import Layout from '../layouts/Layout.astro';
 					<li class="flow box spot--border-bottom">Styleguides</li>
 					<li class="flow box spot--border-bottom">Wireframes</li>
 					<li class="flow box spot--border-bottom">
+						Accessible color palettes
+					</li>
+					<li class="flow box spot--border-bottom">Typography</li>
+					<li class="flow box spot--border-bottom">
+						Spacing &amp; sizing
+					</li>
+					<li class="flow box spot--border-bottom">Component UI</li>
+					<li class="flow box spot--border-bottom">
+						Component specs
+					</li>
+					<li class="flow box spot--border-bottom">
+						Component documentation
+					</li>
+					<li class="flow box spot--border-bottom">
+						Design patterns
+					</li>
+					<li class="flow box spot--border-bottom">
 						Soon: Development
 					</li>
 				</ul>
@@ -459,7 +478,7 @@ import Layout from '../layouts/Layout.astro';
 					>
 						<h3>Development add-on</h3>
 						<p>
-							Accessible design systems and interactive
+							Accessible component libraries and interactive
 							prototypes.
 						</p>
 						<p>
@@ -506,7 +525,100 @@ import Layout from '../layouts/Layout.astro';
 				</ul>
 			</section>
 		</div>
-		<div class="spot-color-gray-dark spot--inner">
+		<div class="spot-color-blue-dark spot--inner">
+			<section class="center region box stack">
+				<div class="flow prose">
+					<h2>FAQ</h2>
+				</div>
+				<Accordion>
+					<AccordionItem
+						header="Why wouldn't I hire a full-time product designer?"
+					>
+						<p>
+							Completely reasonable question. The annual cost of a
+							product designer is $155,000 a year, plus benefits
+							and operational costs. Sometimes there is downtime
+							and now you're paying someone on staff with nothing
+							in their queue.
+						</p>
+						<p>
+							With a monthly subscription you are getting a
+							Principal product designer for a lot less and you
+							can pause or cancel when you no longer have work.
+						</p>
+					</AccordionItem>
+					<AccordionItem header="Is there a limit on requests?">
+						<p>
+							Once you are subscribed, you'll be able to add as
+							many requests to your queue as you desire. They will
+							be delivered one by one.
+						</p>
+					</AccordionItem>
+					<AccordionItem header="How fast will I get my designs?">
+						<p>
+							On average most requests are completed in a few
+							days, or less. More complex requests can take more
+							time.
+						</p>
+					</AccordionItem>
+					<AccordionItem header="Who are the designers?">
+						<p>
+							You will have direct access to me, Frank Stallone,
+							the founder of Design Zen. I have been building on
+							the web since the early 2000s, worked professionally
+							as a designer and developer with design agency,
+							enterprise, and startups. The thread that has gone
+							through my entire career is bridging the gap between
+							design, and development. I've been working on design
+							systems before the term existed, and genuinely enjoy
+							finding ways to make my teams more efficient, and of
+							the highest quality UX. This exclusive access to me
+							is limited. I will only have a few clients. This
+							will allow me to go deeper with them, and provide
+							more value.
+						</p>
+					</AccordionItem>
+					<AccordionItem header="What programs do you use?">
+						<p>
+							All design work is delivered in Figma. We use Notion
+							for the queue, communication and managing requests.
+						</p>
+					</AccordionItem>
+					<AccordionItem header="How do I request designs?">
+						<p>
+							We're using Notion for project management, and it is
+							set up like a kanban board. This gives incredible
+							flexibility to share Google docs, wireframes, Loom
+							videos, or anything that can be linked to.
+						</p>
+					</AccordionItem>
+					<AccordionItem header="What if I don't like the design?">
+						<p>
+							That's okay! We'll continue to revise the work until
+							you're satisfied.
+						</p>
+					</AccordionItem>
+					<AccordionItem
+						header="What if I only have a single request?"
+					>
+						<p>
+							You can pause your subscription when we've finished.
+							When you have additional things to be done, you can
+							return and put items in the queue. Your subscription
+							will be reactivated retaining the rest of your
+							month, even months later.
+						</p>
+					</AccordionItem>
+					<AccordionItem header="Refunds">
+						<p>
+							Due to the unique nature of this service, there are
+							no refunds.
+						</p>
+					</AccordionItem>
+				</Accordion>
+			</section>
+		</div>
+		<footer class="spot-color-gray-dark spot--inner">
 			<section class="center region box stack">
 				<ul role="list" class="switcher">
 					<li class="flex flex-col flow box spot--border-bottom"></li>
@@ -520,6 +632,6 @@ import Layout from '../layouts/Layout.astro';
 					</li>
 				</ul>
 			</section>
-		</div>
+		</footer>
 	</main>
 </Layout>
