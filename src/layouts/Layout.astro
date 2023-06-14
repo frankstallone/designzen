@@ -1,26 +1,26 @@
 ---
-import "../css/reset.css";
-import "../css/future.css";
-import "../css/global.css";
-import "../css/variables.css";
-import "../css/blocks/box.css";
-import "../css/blocks/card.css";
-import "../css/blocks/center.css";
-import "../css/blocks/grid.css";
-import "../css/blocks/navigation.css";
-import "../css/blocks/prose.css";
-import "../css/blocks/cluster.css";
-import "../css/blocks/fifty-sevenfive.css";
-import "../css/blocks/cover.css";
-import "../css/blocks/reel.css";
-import "../css/blocks/stack.css";
-import "../css/blocks/switcher.css";
-import "../css/utilities/content.css";
-import "../css/utilities/flow.css";
-import "../css/utilities/region.css";
-import "../css/utilities/wrapper.css";
-import "../css/utility.css";
-import "../css/exceptions.css";
+import '../css/reset.css';
+import '../css/future.css';
+import '../css/global.css';
+import '../css/variables.css';
+import '../css/blocks/box.css';
+import '../css/blocks/card.css';
+import '../css/blocks/center.css';
+import '../css/blocks/grid.css';
+import '../css/blocks/navigation.css';
+import '../css/blocks/prose.css';
+import '../css/blocks/cluster.css';
+import '../css/blocks/fifty-sevenfive.css';
+import '../css/blocks/cover.css';
+import '../css/blocks/reel.css';
+import '../css/blocks/stack.css';
+import '../css/blocks/switcher.css';
+import '../css/utilities/content.css';
+import '../css/utilities/flow.css';
+import '../css/utilities/region.css';
+import '../css/utilities/wrapper.css';
+import '../css/utility.css';
+import '../css/exceptions.css';
 
 // interface Props {
 // 	meta: {
@@ -32,11 +32,11 @@ import "../css/exceptions.css";
 // }
 // const { meta } = Astro.props;
 
-const title = "Pixel perfect UI to scale fast.";
+const title = 'Pixel perfect UI to scale fast.';
 // const title = meta.title || "Pixel perfect UI to scale fast.";
-const description = "Pixel perfect UI to scale fast.";
+const description = 'Pixel perfect UI to scale fast.';
 // const description = meta.description || "Pixel perfect UI to scale fast.";
-const canonicalURL = "https://designzen.com";
+const canonicalURL = 'https://designzen.com';
 // const canonicalURL = meta.canonicalURL || "https://designzen.com";
 ---
 
@@ -49,6 +49,27 @@ const canonicalURL = "https://designzen.com";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1c2e45" />
+		<meta name="msapplication-TileColor" content="#ffc40d" />
+		<meta name="theme-color" content="#f9f9fa" />
 		<link
 			rel="preload"
 			as="font"
