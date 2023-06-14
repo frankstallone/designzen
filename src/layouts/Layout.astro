@@ -34,7 +34,8 @@ import '../css/exceptions.css';
 
 const title = 'Pixel perfect UI to scale fast.';
 // const title = meta.title || "Pixel perfect UI to scale fast.";
-const description = 'Pixel perfect UI to scale fast.';
+const description =
+	'Free up product designers, and developers to solve business problems.';
 // const description = meta.description || "Pixel perfect UI to scale fast.";
 const canonicalURL = 'https://designzen.com';
 // const canonicalURL = meta.canonicalURL || "https://designzen.com";
@@ -44,11 +45,12 @@ const canonicalURL = 'https://designzen.com';
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta property="og:image" content="/images/og_image.png" />
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
