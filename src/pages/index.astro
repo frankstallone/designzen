@@ -146,7 +146,6 @@ import AccordionItem from '../components/AccordionItem.astro';
 				></path>
 			</svg>
 		</section>
-		<!-- Trust us -->
 		<section
 			class="spot-color-blue-dark spot--inner flex overflow-hidden relative z-10"
 		>
@@ -305,7 +304,10 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</li>
 			</ul>
 		</section>
-		<section class="center region box stack overflow-hidden relative z-10">
+		<section
+			class="center region box stack overflow-hidden relative z-10"
+			id="how-we-work"
+		>
 			<h2 class="z-10">How we work</h2>
 			<ul role="list" class="switcher z-10" data-threshold="l">
 				<li
@@ -343,7 +345,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</li>
 			</ul>
 		</section>
-		<div class="spot-color-blue-dark spot--inner">
+		<div class="spot-color-blue-dark spot--inner" id="benefits">
 			<section class="center region box stack">
 				<h2>Benefits</h2>
 				<ul role="list" class="grid">
@@ -400,7 +402,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</ul>
 			</section>
 		</div>
-		<div class="spot-color-gray spot--inner">
+		<div class="spot-color-gray spot--inner" id="product-design">
 			<section class="center region box stack">
 				<h2>Product design</h2>
 				<ul role="list" class="grid">
@@ -513,7 +515,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 					>
 						<h3>Book a call</h3>
 						<p>
-							Learn more about Designzen and how it can help you.
+							Learn more about designzen and how it can help you.
 						</p>
 						<p class="self-center">
 							<a
@@ -525,7 +527,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</ul>
 			</section>
 		</div>
-		<div class="spot-color-blue spot--inner">
+		<div class="spot-color-blue spot--inner" id="faq">
 			<section class="center region box stack">
 				<div class="flow prose">
 					<h2>FAQ</h2>
@@ -564,7 +566,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 					<AccordionItem header="Who are the designers?">
 						<p>
 							You will have direct access to me, Frank Stallone,
-							the founder of Design Zen. I have been building on
+							the founder of designzen. I have been building on
 							the web since the early 2000s, worked professionally
 							as a designer and developer with design agency,
 							enterprise, and startups. The thread that has gone
@@ -621,14 +623,51 @@ import AccordionItem from '../components/AccordionItem.astro';
 		<footer class="spot-color-gray-dark spot--inner">
 			<section class="center region box stack">
 				<ul role="list" class="switcher">
-					<li class="flex flex-col flow box spot--border-bottom"></li>
-					<li class="flex flex-col flow box spot--border-bottom"></li>
-					<li class="flow flex flex-col box spot--border-bottom">
-						<a
-							href="https://billing.stripe.com/p/login/dR68yAcgi64c6B24gg"
-							>Manage subscription</a
-						>
-						<p><small>Designzen ® 2023</small></p>
+					<li class="flex flex-col flow box items-center">
+						<div class="flex inline-flow">
+							<object
+								type="image/svg+xml"
+								data="/images/nj.svg"
+								width="50px"
+								><span class="sr-only">New Jersey</span></object
+							>
+							<div>
+								<object
+									type="image/svg+xml"
+									data="/images/designzen-wordmark-light.svg"
+									width="200px"
+									><span class="sr-only"
+										>designzen wordmark</span
+									></object
+								>
+								<small
+									>designzen is located in the garden state
+									&mdash; New Jersey</small
+								>
+							</div>
+						</div>
+					</li>
+					<li class="flex flex-col flow box"></li>
+					<li class="flex flex-col box flow">
+						<ul role="list">
+							<li><a href="#how-we-work">How we work</a></li>
+							<li><a href="#benefits">Benefits</a></li>
+							<li>
+								<a href="#product-design">Product design</a>
+							</li>
+							<li>
+								<a href="#membership">Pricing</a>
+							</li>
+							<li>
+								<a href="#faq">FAQ</a>
+							</li>
+							<li>
+								<a
+									href="https://billing.stripe.com/p/login/dR68yAcgi64c6B24gg"
+									>Manage subscription</a
+								>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
