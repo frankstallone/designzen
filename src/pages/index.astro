@@ -19,7 +19,9 @@ import AccordionItem from '../components/AccordionItem.astro';
 					>
 				</span>
 
-				<h2>Product design on demand, for a flat monthly fee.</h2>
+				<h2>
+					Product design with <a href="#benefits">Rapid Requests</a>.
+				</h2>
 				<a href="#membership" class="button">See plans</a>
 			</div>
 			<div class="center z-10">
@@ -28,16 +30,20 @@ import AccordionItem from '../components/AccordionItem.astro';
 					role="list"
 				>
 					<li class="box" data-padding="m-l">
-						Subscribe &amp; request as many designs as you'd like.
+						<a href="#benefits">Simple Start</a> &amp; get requests in
+						queue.
 					</li>
 					<li
 						class="box spot-color-blue-dark spot--inner"
 						data-padding="m-l"
 					>
-						Turnaround in a few days, on average, Monday — Friday.
+						Turnaround in a few days with <a href="#benefits"
+							>Rapid Request</a
+						>.
 					</li>
 					<li class="box" data-padding="m-l">
-						We'll revise until you are proud of the results!
+						<a href="#benefits">Changes Covered</a> until you are proud
+						of the results!
 					</li>
 				</ul>
 			</div>
@@ -305,10 +311,10 @@ import AccordionItem from '../components/AccordionItem.astro';
 			</ul>
 		</section>
 		<section
-			class="region center max-inline-size:measure-lg"
+			class="region center max-inline-size:measure-lg stack"
 			id="recent-work"
 		>
-			<h2 class="z-10">Recent work</h2>
+			<h2 class="z-10 text-center wrapper">Recent work</h2>
 			<ul role="list" class="grid" style="--grid-gap: 0;">
 				<li
 					class="flex flex-col justify-center max-inline-size:measure-lg"
@@ -364,7 +370,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 			class="center region box stack overflow-hidden relative z-10"
 			id="how-we-work"
 		>
-			<h2 class="z-10">How we work</h2>
+			<h2 class="z-10 text-center">How we work</h2>
 			<ul role="list" class="switcher z-10" data-threshold="l">
 				<li
 					class="flex flex-col justify-center text-center flow box relative z-10"
@@ -403,40 +409,43 @@ import AccordionItem from '../components/AccordionItem.astro';
 		</section>
 		<div class="spot-color-blue-dark spot--inner" id="benefits">
 			<section class="center region box stack">
-				<h2>Benefits</h2>
+				<h2 class="text-center">Benefits</h2>
 				<ul role="list" class="grid">
 					<li
 						class="flow box spot-color-blue spot--inner"
 						data-padding="m-l"
 					>
-						<h3>Simple Start</h3>
+						<h3 class="text-center">Simple Start</h3>
 						<p>
-							We cut out contracts, scoping, change orders, etc.
-							Sign up and get requests in the queue.
+							We cut out lengthy contracts, scope discussions,
+							change orders, and more.
 						</p>
 					</li>
 					<li
 						class="flow box spot-color-blue spot--inner"
 						data-padding="m-l"
 					>
-						<h3>Rapid Request</h3>
-						<p>Most requests take a few days.</p>
-					</li>
-					<li
-						class="flow box spot-color-blue spot--inner"
-						data-padding="m-l"
-					>
-						<h3>Staff Shelf</h3>
+						<h3 class="text-center">Rapid Request</h3>
 						<p>
-							Decades of experience in UX/UI web design &amp;
-							accessible development.
+							Most requests take a few days, on average, Monday —
+							Friday.
 						</p>
 					</li>
 					<li
 						class="flow box spot-color-blue spot--inner"
 						data-padding="m-l"
 					>
-						<h3>Dynamic Dues</h3>
+						<h3 class="text-center">Staff Sage</h3>
+						<p>
+							Decades of experience in user experience driven
+							design.
+						</p>
+					</li>
+					<li
+						class="flow box spot-color-blue spot--inner"
+						data-padding="m-l"
+					>
+						<h3 class="text-center">Dynamic Dues</h3>
 						<p>
 							Easy to manage subscription. Pause or cancel any
 							time.
@@ -446,14 +455,14 @@ import AccordionItem from '../components/AccordionItem.astro';
 						class="flow box spot-color-blue spot--inner"
 						data-padding="m-l"
 					>
-						<h3>Changes Cover</h3>
+						<h3 class="text-center">Changes Cover</h3>
 						<p>We'll continue to iterate until your satisfied.</p>
 					</li>
 					<li
 						class="flow box spot-color-blue spot--inner"
 						data-padding="m-l"
 					>
-						<h3>Predictable Pay</h3>
+						<h3 class="text-center">Predictable Pay</h3>
 						<p>Pay the same price, each month.</p>
 					</li>
 				</ul>
@@ -461,7 +470,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 		</div>
 		<div class="spot-color-gray spot--inner" id="product-design">
 			<section class="center region box stack">
-				<h2>Product design</h2>
+				<h2 class="text-center">Outcomes</h2>
 				<ul role="list" class="grid">
 					<li class="flow box spot--border-bottom">Web apps</li>
 					<li class="flow box spot--border-bottom">Mobile apps</li>
@@ -496,56 +505,77 @@ import AccordionItem from '../components/AccordionItem.astro';
 			</section>
 		</div>
 		<div class="spot-color-blue-dark spot--inner" id="membership">
-			<section class="center region box stack">
-				<div class="flow prose">
-					<h2>Membership levels</h2>
-					<p>Choose the plan that's right for you.</p>
+			<section class="center region box stack max-inline-size:measure-lg">
+				<div class="flow prose wrapper">
+					<h2 class="text-center">Membership levels</h2>
+					<p class="text-center">
+						Choose the plan that's right for you.
+					</p>
 				</div>
 				<ul role="list" class="switcher">
 					<li
-						class="flex flex-col flow box spot-color-blue spot--inner"
+						class="flex flex-col flow"
+						data-flow-space-block-start="sm"
 					>
-						<h3>Design subscription</h3>
-						<p>No minimum commitment. Pause or cancel anytime.</p>
-						<h4>
-							$3,499/m <small
-								style="color: var(--gray700);"
-								class="text-strike italic step--1 font-weight-light"
-								>$5,599/m</small
+						<div
+							class="flex flex-col flow box spot-color-blue spot--inner"
+						>
+							<h3 class="text-">Design subscription</h3>
+							<p>
+								No minimum commitment. Pause or cancel anytime.
+							</p>
+							<h4>
+								$3,499/m <small
+									style="color: var(--gray700);"
+									class="text-strike italic step--1 font-weight-light"
+									>$5,599/m</small
+								>
+							</h4>
+							<p
+								class="text-center"
+								style="margin-block-end: 1rem;"
 							>
-						</h4>
-						<p class="text-center" style="margin-block-end: 1rem;">
-							<small
-								style="color: var(--blue800);"
-								class="step--1">Pause or cancel anytime</small
-							>
-						</p>
-						<p class="mt-auto self-center text-center">
-							<a
-								href="https://buy.stripe.com/9AQeVe92q4B79PO3cd"
-								class="button">Get started</a
-							>
-						</p>
-						<p class="text-center font-weight-medium step--1">
-							<a href="https://tidycal.com/designzen/intro-call"
-								>Book a call</a
-							>
-						</p>
+								<small
+									style="color: var(--blue800);"
+									class="step--1"
+									>Pause or cancel anytime</small
+								>
+							</p>
+							<p class="mt-auto self-center text-center">
+								<a
+									href="https://buy.stripe.com/9AQeVe92q4B79PO3cd"
+									class="button">Get started</a
+								>
+							</p>
+							<p class="text-center font-weight-medium step--1">
+								<a
+									href="https://tidycal.com/designzen/intro-call"
+									>Book a call</a
+								>
+							</p>
+						</div>
+						<div
+							class="flex flex-col flow box spot-color-blue spot--inner"
+						>
+							<p class="font-weight-bold">What's included</p>
+							<ul class="flow">
+								<li>Limited availability priority</li>
+								<li>One request at a time</li>
+								<li>Unlimited users</li>
+								<li>Easy credit card payments</li>
+								<li>Pause or cancel anytime</li>
+							</ul>
+						</div>
 					</li>
 					<li
 						class="flex flex-col flow box spot-color-blue spot--inner"
 					>
 						<h3>Development add-on</h3>
-						<p>
-							Accessible component libraries and interactive
-							prototypes.
-						</p>
-						<p>
-							<small class="block">
-								Requires design subscription.
-							</small>
-						</p>
-						<h4 class="text-strike">$999/m</h4>
+						<p>Accessible component libraries and prototypes.</p>
+						<h4 class="text-strike">$999/m*</h4>
+						<small class="block" data-margin-start="none">
+							* Requires design subscription.
+						</small>
 						<p class="text-center" style="margin-block-end: 1rem;">
 							<small
 								style="color: var(--blue800);"
@@ -587,7 +617,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 		<div class="spot-color-blue spot--inner" id="faq">
 			<section class="center region box stack">
 				<div class="flow prose">
-					<h2>FAQ</h2>
+					<h2 class="text-center">FAQ</h2>
 				</div>
 				<Accordion>
 					<AccordionItem
