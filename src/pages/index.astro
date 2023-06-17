@@ -477,8 +477,8 @@ import AccordionItem from '../components/AccordionItem.astro';
 		</div>
 		<div class="spot-color-gray spot--inner" id="product-design">
 			<section class="center region box stack">
-				<h2 class="text-center">Outcomes</h2>
-				<ul role="list" class="grid">
+				<h2 class="text-center">Request fulfilled</h2>
+				<ul role="list" class="grid" style="--grid-gap:.25em 1em;">
 					<li class="flow box spot--border-bottom">Web apps</li>
 					<li class="flow box spot--border-bottom">Mobile apps</li>
 					<li class="flow box spot--border-bottom">Design systems</li>
@@ -519,25 +519,125 @@ import AccordionItem from '../components/AccordionItem.astro';
 						Choose the plan that's right for you.
 					</p>
 				</div>
-				<ul role="list" class="switcher">
-					<li
-						class="flex flex-col flow"
-						data-flow-space-block-start="sm"
-					>
-						<div
+				<div class="flex flex-col flow">
+					<ul role="list" class="switcher">
+						<li
+							class="flex flex-col flow"
+							data-flow-space-block-start="sm"
+						>
+							<div
+								class="flex flex-col flow box spot-color-blue spot--inner"
+							>
+								<h3>Montly subscription</h3>
+								<p>
+									No minimum commitment. Pause or cancel
+									anytime.
+								</p>
+								<h4>
+									$3,499/m <small
+										style="color: var(--gray700);"
+										class="text-strike italic step--1 font-weight-light"
+										>$5,599/m</small
+									>
+								</h4>
+								<p
+									class="text-center"
+									style="margin-block-end: 1rem;"
+								>
+									<small
+										style="color: var(--blue800);"
+										class="step--1"
+										>Pause or cancel anytime</small
+									>
+								</p>
+								<p class="mt-auto self-center text-center">
+									<a
+										href="https://buy.stripe.com/9AQeVe92q4B79PO3cd"
+										class="button">Get started</a
+									>
+								</p>
+								<p
+									class="text-center font-weight-medium step--1"
+								>
+									<a
+										href="https://tidycal.com/designzen/intro-call"
+										>Book a call</a
+									>
+								</p>
+							</div>
+							<div
+								class="flex flex-col flow box spot-color-blue spot--inner"
+							>
+								<p class="font-weight-bold">What's included</p>
+								<ul class="flow">
+									<li>Limited availability priority</li>
+									<li>One request at a time</li>
+									<li>Unlimited users</li>
+									<li>Easy credit card payments</li>
+									<li>Pause or cancel anytime</li>
+								</ul>
+							</div>
+						</li>
+						<li
+							class="flex flex-col flow"
+							data-flow-space-block-start="sm"
+						>
+							<div
+								class="flex flex-col flow box spot-color-blue spot--inner"
+							>
+								<h3>Quarterly subscription</h3>
+								<p>
+									Locked in pricing for three months. Save
+									$500 a month.
+								</p>
+								<h4 style="margin-block-end: 1rem;">
+									$9,000 <small
+										style="color: var(--gray700);"
+										class="text-strike italic step--1 font-weight-light"
+										>$10,500</small
+									>
+								</h4>
+								<p class="mt-auto self-center text-center">
+									<a
+										href="https://buy.stripe.com/9AQeVe92q4B79PO3cd"
+										class="button">Get started</a
+									>
+								</p>
+								<p
+									class="text-center font-weight-medium step--1"
+								>
+									<a
+										href="https://tidycal.com/designzen/intro-call"
+										>Book a call</a
+									>
+								</p>
+							</div>
+							<div
+								class="flex flex-col flow box spot-color-blue spot--inner"
+							>
+								<p class="font-weight-bold">What's included</p>
+								<ul class="flow">
+									<li>Limited availability priority</li>
+									<li>One request at a time</li>
+									<li>Unlimited users</li>
+									<li>Easy credit card payments</li>
+									<li class="text-strike">
+										Pause or cancel anytime
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li
 							class="flex flex-col flow box spot-color-blue spot--inner"
 						>
-							<h3 class="text-">Design subscription</h3>
+							<h3>Development add-on</h3>
 							<p>
-								No minimum commitment. Pause or cancel anytime.
+								Accessible component libraries and prototypes.
 							</p>
-							<h4>
-								$3,499/m <small
-									style="color: var(--gray700);"
-									class="text-strike italic step--1 font-weight-light"
-									>$5,599/m</small
-								>
-							</h4>
+							<h4 class="text-strike">$999/m*</h4>
+							<small class="block" data-margin-start="none">
+								* Requires design subscription.
+							</small>
 							<p
 								class="text-center"
 								style="margin-block-end: 1rem;"
@@ -550,9 +650,12 @@ import AccordionItem from '../components/AccordionItem.astro';
 							</p>
 							<p class="mt-auto self-center text-center">
 								<a
-									href="https://buy.stripe.com/9AQeVe92q4B79PO3cd"
-									class="button">Get started</a
+									href="##"
+									class="button disabled"
+									aria-disabled="true"
 								>
+									Coming soon
+								</a>
 							</p>
 							<p class="text-center font-weight-medium step--1">
 								<a
@@ -560,65 +663,21 @@ import AccordionItem from '../components/AccordionItem.astro';
 									>Book a call</a
 								>
 							</p>
-						</div>
-						<div
-							class="flex flex-col flow box spot-color-blue spot--inner"
-						>
-							<p class="font-weight-bold">What's included</p>
-							<ul class="flow">
-								<li>Limited availability priority</li>
-								<li>One request at a time</li>
-								<li>Unlimited users</li>
-								<li>Easy credit card payments</li>
-								<li>Pause or cancel anytime</li>
-							</ul>
-						</div>
-					</li>
-					<li
-						class="flex flex-col flow box self-baseline spot-color-blue spot--inner"
-					>
-						<h3>Development add-on</h3>
-						<p>Accessible component libraries and prototypes.</p>
-						<h4 class="text-strike">$999/m*</h4>
-						<small class="block" data-margin-start="none">
-							* Requires design subscription.
-						</small>
-						<p class="text-center" style="margin-block-end: 1rem;">
-							<small
-								style="color: var(--blue800);"
-								class="step--1">Pause or cancel anytime</small
-							>
-						</p>
-						<p class="mt-auto self-center text-center">
-							<a
-								href="##"
-								class="button disabled"
-								aria-disabled="true"
-							>
-								Coming soon
-							</a>
-						</p>
-						<p class="text-center font-weight-medium step--1">
-							<a href="https://tidycal.com/designzen/intro-call"
-								>Book a call</a
-							>
-						</p>
-					</li>
-					<li
-						class="flow flex flex-col box self-baseline spot-color-blue spot--inner"
-					>
+						</li>
+					</ul>
+					<div class="flow flex flex-col text-center items-center">
 						<h3>Book a call</h3>
 						<p>
 							Learn more about designzen and how it can help you.
 						</p>
-						<p class="self-center">
+						<p>
 							<a
 								href="https://tidycal.com/designzen/intro-call"
-								class="button text-center">Book a call</a
+								class="button">Book a call</a
 							>
 						</p>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</section>
 		</div>
 		<div class="spot-color-blue spot--inner" id="faq">
