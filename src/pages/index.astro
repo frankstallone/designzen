@@ -20,7 +20,9 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</span>
 
 				<h2>
-					Product design with <a href="#benefits">Rapid Requests</a>.
+					Product design that <br /><span id="people">
+						customers love.
+					</span>
 				</h2>
 				<a href="#membership" class="button">See plans</a>
 			</div>
@@ -827,4 +829,19 @@ import AccordionItem from '../components/AccordionItem.astro';
 			</section>
 		</footer>
 	</main>
+	<script>
+		import Typed from 'typed.js';
+		const typed = new Typed('#people', {
+			strings: [
+				'stakeholders love.',
+				'shareholders love.',
+				'people love.',
+			],
+			startDelay: 1500,
+			typeSpeed: 50,
+			backSpeed: 40,
+			backDelay: 2000,
+			shuffle: true,
+		});
+	</script>
 </Layout>
