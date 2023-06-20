@@ -147,7 +147,7 @@ textarea:focus {
   font-weight: 600;
   background: var(--yellow500);
   /* Hack that needs to be fixed */
-  color: var(--yellow1000) !important;
+  color: var(--yellow1000);
   border: none;
   padding: var(--space-xs) var(--space-xl);
   text-decoration: none;
