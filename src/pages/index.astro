@@ -158,6 +158,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 		</section>
 		<section
 			class="spot-color-blue-dark spot--inner flex overflow-hidden relative z-10"
+			style="--spot-color: transparent;"
 		>
 			<ul role="list" class="flex flex-row flex-auto">
 				<li class="box grow flex justify-center">
@@ -393,11 +394,11 @@ import AccordionItem from '../components/AccordionItem.astro';
 			</ul>
 		</section> -->
 		<section
-			class="center region box stack overflow-hidden relative z-10"
+			class="region stack overflow-hidden relative z-10 spot-color-gray spot--inner"
 			id="how-we-work"
 		>
-			<h2 class="z-10 text-center">How we work</h2>
-			<ul role="list" class="switcher z-10" data-threshold="l">
+			<h2 class="center z-10 text-center">How we work</h2>
+			<ul role="list" class="switcher" data-threshold="l">
 				<li
 					class="flex flex-col justify-center text-center flow box relative z-10"
 					data-padding="m-l"
@@ -433,12 +434,17 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</li>
 			</ul>
 		</section>
-		<div class="spot-color-blue-dark spot--inner" id="benefits">
+		<div
+			class="spot-color-blue-dark spot--inner relative z-10"
+			id="benefits"
+			style="--spot-color: transparent;"
+		>
 			<section class="center region box stack">
 				<h2 class="text-center">Benefits</h2>
 				<ul role="list" class="grid">
 					<li
-						class="flow box spot-color-blue spot--inner"
+						class="flow box spot-color-blue spot--inner rounded"
+						style="background-color: hsla(210deg 11.76% 93.33% / 95%)"
 						data-padding="m-l"
 					>
 						<h3 class="text-center">Simple Start</h3>
@@ -448,7 +454,8 @@ import AccordionItem from '../components/AccordionItem.astro';
 						</p>
 					</li>
 					<li
-						class="flow box spot-color-blue spot--inner"
+						class="flow box spot-color-blue spot--inner rounded"
+						style="background-color: hsla(210deg 11.76% 93.33% / 95%)"
 						data-padding="m-l"
 					>
 						<h3 class="text-center">Rapid Request</h3>
@@ -458,7 +465,8 @@ import AccordionItem from '../components/AccordionItem.astro';
 						</p>
 					</li>
 					<li
-						class="flow box spot-color-blue spot--inner"
+						class="flow box spot-color-blue spot--inner rounded"
+						style="background-color: hsla(210deg 11.76% 93.33% / 95%)"
 						data-padding="m-l"
 					>
 						<h3 class="text-center">Staff Sage</h3>
@@ -468,7 +476,8 @@ import AccordionItem from '../components/AccordionItem.astro';
 						</p>
 					</li>
 					<li
-						class="flow box spot-color-blue spot--inner"
+						class="flow box spot-color-blue spot--inner rounded"
+						style="background-color: hsla(210deg 11.76% 93.33% / 95%)"
 						data-padding="m-l"
 					>
 						<h3 class="text-center">Dynamic Dues</h3>
@@ -478,14 +487,16 @@ import AccordionItem from '../components/AccordionItem.astro';
 						</p>
 					</li>
 					<li
-						class="flow box spot-color-blue spot--inner"
+						class="flow box spot-color-blue spot--inner rounded"
+						style="background-color: hsla(210deg 11.76% 93.33% / 95%)"
 						data-padding="m-l"
 					>
 						<h3 class="text-center">Changes Cover</h3>
 						<p>We'll continue to iterate until your satisfied.</p>
 					</li>
 					<li
-						class="flow box spot-color-blue spot--inner"
+						class="flow box spot-color-blue spot--inner rounded"
+						style="background-color: hsla(210deg 11.76% 93.33% / 95%)"
 						data-padding="m-l"
 					>
 						<h3 class="text-center">Predictable Pay</h3>
@@ -501,7 +512,10 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</ul>
 			</section>
 		</div>
-		<div class="spot-color-gray spot--inner" id="product-design">
+		<div
+			class="spot-color-gray spot--inner relative z-10"
+			id="product-design"
+		>
 			<section class="center region box stack">
 				<h2 class="text-center">Request fulfilled</h2>
 				<ul role="list" class="grid" style="--grid-gap:.25em 1em;">
@@ -537,7 +551,11 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</ul>
 			</section>
 		</div>
-		<div class="spot-color-blue-dark spot--inner" id="membership">
+		<div
+			class="spot-color-blue-dark spot--inner relative z-10"
+			id="membership"
+			style="--spot-color: transparent;"
+		>
 			<section class="center region box stack max-inline-size:measure-lg">
 				<div class="flow prose wrapper">
 					<h2 class="text-center">Membership levels</h2>
@@ -707,7 +725,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</div>
 			</section>
 		</div>
-		<div class="spot-color-blue spot--inner" id="faq">
+		<div class="spot-color-blue spot--inner relative z-10" id="faq">
 			<section class="center region box stack">
 				<div class="flow prose">
 					<h2 class="text-center">FAQ</h2>
@@ -802,7 +820,10 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</Accordion>
 			</section>
 		</div>
-		<footer class="spot-color-gray-dark spot--inner">
+		<footer
+			class="spot-color-gray-dark spot--inner relative z-10"
+			style="--spot-color: transparent;"
+		>
 			<section class="center region box stack">
 				<ul role="list" class="switcher">
 					<li class="flex flex-col flow box items-center">
@@ -856,6 +877,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 			</section>
 		</footer>
 	</main>
+	<div id="page-background" class="z-0"></div>
 	<script>
 		import Typed from 'typed.js';
 		const typed = new Typed('#people', {

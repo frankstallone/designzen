@@ -222,3 +222,19 @@ textarea:focus {
     top: 78%;
   }
 }
+
+#page-background {
+  background: hsla(210, 45%, 8%, 1);
+  height: 100dvh;
+  background-size: 200% 200%;
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(
+      at 30% 35%,
+      hsl(210, 48%, 9%) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 5% 98%, hsl(252, 39%, 56%) 0px, transparent 50%),
+    radial-gradient(at 90% 54%, hsl(215, 92%, 14%) 0px, transparent 50%),
+    radial-gradient(at 89% 4%, hsl(239, 89%, 64%) 0px, transparent 50%);
+}
