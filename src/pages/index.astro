@@ -444,7 +444,15 @@ import AccordionItem from '../components/AccordionItem.astro';
 			style="--spot-color: transparent;"
 		>
 			<section class="center region box stack max-inline-size:measure-lg">
-				<h2 class="text-center">Benefits</h2>
+				<div class="flow prose wrapper text-center">
+					<h2>Benefits</h2>
+					<p>
+						Designzen provides high fidelity UI elements for
+						consistent scaling, enabling you to prioritize
+						mission-critical business problems while delivering
+						exceptional user experiences.
+					</p>
+				</div>
 				<ul role="list" class="grid">
 					<li
 						class="flow box spot-color-blue spot--inner rounded"
@@ -508,7 +516,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 			id="product-design"
 		>
 			<section class="center region box stack max-inline-size:measure-lg">
-				<h2 class="text-center">Request fulfilled</h2>
+				<h2 class="center text-center">Request fulfilled</h2>
 				<ul role="list" class="grid" style="--grid-gap:.25em 1em;">
 					<li class="flow box spot--border-bottom">Web apps</li>
 					<li class="flow box spot--border-bottom">Mobile apps</li>
@@ -548,11 +556,9 @@ import AccordionItem from '../components/AccordionItem.astro';
 			style="--spot-color: transparent;"
 		>
 			<section class="center region box stack max-inline-size:measure-lg">
-				<div class="flow prose wrapper">
-					<h2 class="text-center">Membership levels</h2>
-					<p class="text-center">
-						Choose the plan that's right for you.
-					</p>
+				<div class="flow prose wrapper text-center">
+					<h2>Membership levels</h2>
+					<p>Choose the plan that's right for you.</p>
 				</div>
 				<div class="flex flex-col flow">
 					<ul role="list" class="switcher">
@@ -713,7 +719,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 		<div class="spot-color-blue spot--inner relative z-10" id="faq">
 			<section class="center region box stack">
 				<div class="flow prose">
-					<h2 class="text-center">FAQ</h2>
+					<h2 class="center text-center">FAQ</h2>
 				</div>
 				<Accordion>
 					<AccordionItem
