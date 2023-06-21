@@ -3,7 +3,7 @@
 /* Width */
 
 .max-inline-size\:measure-lg {
-  max-inline-size: calc(var(--measure) * 1.25) !important;
+  max-inline-size: calc(var(--measure) * 1.5) !important;
 }
 
 .max-inline-size\:measure {
