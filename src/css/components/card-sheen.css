@@ -1,0 +1,10 @@
+.sheen {
+  background: rgb(249, 249, 250);
+  background: linear-gradient(
+    45deg,
+    rgba(249, 249, 250, 1) 0%,
+    rgba(255, 255, 255, 1) 11%,
+    rgba(249, 249, 250, 1) 24%
+  );
+  padding: 0.125rem;
+}
