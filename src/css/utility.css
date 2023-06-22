@@ -6,6 +6,10 @@
   max-inline-size: calc(var(--measure) * 1.5) !important;
 }
 
+.max-inline-size\:measure-m {
+  max-inline-size: calc(var(--measure) * 1.25) !important;
+}
+
 .max-inline-size\:measure {
   max-inline-size: var(--measure) !important;
 }

@@ -29,10 +29,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 				<a href="#membership" class="button">See plans</a>
 			</div>
 			<div class="center z-10">
-				<ul
-					class="switcher region text-center font-weight-medium"
-					role="list"
-				>
+				<ul class="switcher region text-center" role="list">
 					<li class="box rounded" data-padding="m-l">
 						<a href="#benefits">Simple Start</a> &amp; get requests in
 						queue.
@@ -400,7 +397,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 			<h2 class="center z-10 text-center">How we work</h2>
 			<ul
 				role="list"
-				class="switcher center max-inline-size:measure-lg"
+				class="switcher center max-inline-size:measure-lg justify-center"
 				data-threshold="l"
 			>
 				<li
@@ -438,12 +435,216 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</li>
 			</ul>
 		</section>
+		<section
+			class="region stack overflow-hidden relative z-10 spot-color-yellow spot--inner"
+			id="outcomes"
+		>
+			<div class="flow prose wrapper text-center">
+				<h2>Outcomes</h2>
+				<p>
+					Designzen was created to be help you scale consistently,
+					with high fidelity user interface elements, to bring the
+					best user experiences to your users, and allow you to focus
+					on solving mission critical business problems.
+				</p>
+			</div>
+			<div class="box">
+				<ul
+					role="list"
+					class="grid text-center"
+					style="--grid-gap: var(--space-xl);"
+				>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Increased customer satisfaction
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Improved NPS scores
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Unified design language
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Focus back on business problems
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						High quality design assets
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Improved productivity
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Scale up faster
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Higher quality design
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Visual consistency
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Knowledge sharing
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Massive savings
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Less meetings
+					</li>
+					<li
+						class="flex flex-col items-center justify-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+							viewBox="0 0 512 512"
+						>
+							<path
+								d="M432 32c8.8 0 16 7.2 16 16V96h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V128H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V48c0-8.8 7.2-16 16-16zm0 288c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V416H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V336c0-8.8 7.2-16 16-16zM136.8 216.4L54.2 254.6l82.6 38.1c6.9 3.2 12.4 8.7 15.6 15.6l38.1 82.6 38.1-82.6c3.2-6.9 8.7-12.4 15.6-15.6l82.6-38.1-82.6-38.1c-6.9-3.2-12.4-8.7-15.6-15.6l-38.1-82.6-38.1 82.6c-3.2 6.9-8.7 12.4-15.6 15.6zM123.4 321.8L9.3 269.1C3.6 266.5 0 260.8 0 254.6s3.6-11.9 9.3-14.5l114.1-52.7L176 73.3c2.6-5.7 8.3-9.3 14.5-9.3s11.9 3.6 14.5 9.3l52.7 114.1L371.8 240c5.7 2.6 9.3 8.3 9.3 14.5s-3.6 11.9-9.3 14.5L257.8 321.8 205.1 435.8c-2.6 5.7-8.3 9.3-14.5 9.3s-11.9-3.6-14.5-9.3L123.4 321.8z"
+							></path></svg
+						>
+						Reduce bike shedding
+					</li>
+				</ul>
+			</div>
+		</section>
 		<div
 			class="spot-color-blue-dark spot--inner relative z-10"
 			id="benefits"
 			style="--spot-color: transparent;"
 		>
-			<section class="center region box stack max-inline-size:measure-lg">
+			<section class="center region box stack max-inline-size:measure-m">
 				<div class="flow prose wrapper text-center">
 					<h2>Benefits</h2>
 					<p>
@@ -511,45 +712,272 @@ import AccordionItem from '../components/AccordionItem.astro';
 				</ul>
 			</section>
 		</div>
-		<div
-			class="spot-color-gray spot--inner relative z-10"
+		<section
+			class="region stack spot-color-gray spot--inner relative z-10"
 			id="product-design"
 		>
-			<section class="center region box stack max-inline-size:measure-lg">
-				<h2 class="center text-center">Request fulfilled</h2>
-				<ul role="list" class="grid" style="--grid-gap:.25em 1em;">
-					<li class="flow box spot--border-bottom">Web apps</li>
-					<li class="flow box spot--border-bottom">Mobile apps</li>
-					<li class="flow box spot--border-bottom">Design systems</li>
-					<li class="flow box spot--border-bottom">Prototypes</li>
-					<li class="flow box spot--border-bottom">UI kits</li>
-					<li class="flow box spot--border-bottom">Wireframes</li>
-					<li class="flow box spot--border-bottom">SaaS apps</li>
-					<li class="flow box spot--border-bottom">Styleguides</li>
-					<li class="flow box spot--border-bottom">Wireframes</li>
-					<li class="flow box spot--border-bottom">
+			<h2 class="center text-center">Requests fulfilled</h2>
+			<div class="box">
+				<ul
+					role="list"
+					class="grid text-center"
+					style="--grid-gap: var(--space-xl);"
+				>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						Web apps
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						Mobile apps
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						Design systems
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						Prototypes
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						Design tokens
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						UI kits
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						Wireframes
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						SaaS apps
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						Styleguides
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						Wireframes
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
 						Accessible color palettes
 					</li>
-					<li class="flow box spot--border-bottom">Typography</li>
-					<li class="flow box spot--border-bottom">
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						Typography
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
 						Spacing &amp; sizing
 					</li>
-					<li class="flow box spot--border-bottom">Component UI</li>
-					<li class="flow box spot--border-bottom">
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
+						Component UI
+					</li>
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
 						Component specs
 					</li>
-					<li class="flow box spot--border-bottom">
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
 						Component documentation
 					</li>
-					<li class="flow box spot--border-bottom">
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
 						Design patterns
 					</li>
-					<li class="flow box spot--border-bottom">
+					<li
+						class="flex flex-col justify-center items-center step-2 font-weight-light"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512"
+							style="margin-block-end: var(--space-s); fill: currentColor;"
+						>
+							<path
+								d="M64 64C46.3 64 32 78.3 32 96V416c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM331.3 203.3l-128 128c-6.2 6.2-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L192 297.4 308.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"
+							></path></svg
+						>
 						Soon: Development
 					</li>
 				</ul>
-			</section>
-		</div>
+			</div>
+		</section>
 		<div
 			class="spot-color-blue-dark spot--inner relative z-10"
 			id="membership"
@@ -812,7 +1240,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 			</section>
 		</div>
 		<footer
-			class="spot-color-gray-dark spot--inner relative z-10"
+			class="spot-color-gray-dark spot--inner relative z-10 overflow-hidden"
 			style="--spot-color: transparent;"
 		>
 			<section class="center region box stack max-inline-size:measure-lg">
@@ -848,6 +1276,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 						<ul role="list">
 							<li><a href="#recent-work">Recent work</a></li>
 							<li><a href="#how-we-work">How we work</a></li>
+							<li><a href="#outcomes">Outcomes</a></li>
 							<li><a href="#benefits">Benefits</a></li>
 							<li>
 								<a href="#product-design">Product design</a>
