@@ -48,6 +48,18 @@
   --purple1000: #842069;
   --purple1100: #5a0243;
   --purple1200: #13000e;
+  --orange100: #fff8f6;
+  --orange200: #ffeae2;
+  --orange300: #ffdfd2;
+  --orange400: #ffd0bd;
+  --orange500: #ffc2ac;
+  --orange600: #ffb195;
+  --orange700: #fb815b;
+  --orange800: #d95e36;
+  --orange900: #af431f;
+  --orange1000: #852e10;
+  --orange1100: #551905;
+  --orange1200: #120200;
 
   --measure: 70ch;
   --color-light: var(--gray100);

@@ -590,6 +590,16 @@ Utilities for controlling how an element handles content that is too large for t
   --spot-color-text: var(--purple100);
 }
 
+.spot-color-orange {
+  --spot-color: var(--orange400);
+  --spot-color-text: var(--orange1100);
+}
+
+.spot-color-orange-dark {
+  --spot-color: var(--orange1100);
+  --spot-color-text: var(--orange400);
+}
+
 .spot--inner {
   background: var(--spot-color, var(--color-light));
   color: var(--spot-color-text, var(--color-dark));
@@ -597,6 +607,94 @@ Utilities for controlling how an element handles content that is too large for t
 
 .spot--border-bottom {
   border-bottom: 3px solid var(--spot-color-border);
+}
+
+.gray-background {
+  background: #f7f9fa;
+  background-size: 100% 100%;
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(at 15% 45%, #f7f9fa 0px, transparent 40%),
+    radial-gradient(at 35% 8%, #e2e6e8 0px, transparent 50%),
+    radial-gradient(at 10% 24%, #f7f9fa 0px, transparent 50%),
+    radial-gradient(at 20% 60%, #d7dadd 0px, transparent 50%);
+}
+
+.blue-background-dark {
+  background: #03060a;
+  background-size: 100% 100%;
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(at 30% 35%, #03060a 0px, transparent 40%),
+    radial-gradient(at 0% 98%, #3d4c60 0px, transparent 50%),
+    radial-gradient(at 9% 5%, #03060a 0px, transparent 50%),
+    radial-gradient(at 89% 4%, #1c2e45 0px, transparent 50%);
+}
+
+.yellow-background {
+  background: #fef9eb;
+  background-size: 100% 100%;
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(at 15% 45%, #fef9eb 0px, transparent 40%),
+    radial-gradient(at 35% 8%, #fae4a3 0px, transparent 50%),
+    radial-gradient(at 10% 24%, #fef9eb 0px, transparent 50%),
+    radial-gradient(at 20% 60%, #fcefca 0px, transparent 50%);
+}
+
+.yellow-background-dark {
+  background: #070501;
+  background-size: 100% 100%;
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(at 15% 45%, #070501 0px, transparent 40%),
+    radial-gradient(at 42% 8%, #5c490d 0px, transparent 50%),
+    radial-gradient(at 10% 24%, #070501 0px, transparent 50%),
+    radial-gradient(at 70% 80%, #372c08 0px, transparent 50%);
+}
+
+.purple-background {
+  background: #fbf8fa;
+  background-size: 100% 100%;
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(at 15% 45%, #fbf8fa 0px, transparent 40%),
+    radial-gradient(at 35% 8%, #f5edf3 0px, transparent 50%),
+    radial-gradient(at 10% 24%, #fbf8fa 0px, transparent 50%),
+    radial-gradient(at 20% 60%, #efe2eb 0px, transparent 50%);
+}
+
+/* .purple-background-dark {
+  background: #070501;
+  background-size: 100% 100%;
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(at 15% 45%, #070501 0px, transparent 40%),
+    radial-gradient(at 42% 8%, #5c490d 0px, transparent 50%),
+    radial-gradient(at 10% 24%, #070501 0px, transparent 50%),
+    radial-gradient(at 70% 80%, #372c08 0px, transparent 50%);
+} */
+
+.orange-background {
+  background: #fff8f6;
+  background-size: 100% 100%;
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(at 15% 45%, #fff8f6 0px, transparent 40%),
+    radial-gradient(at 35% 8%, #ffdfd2 0px, transparent 50%),
+    radial-gradient(at 10% 24%, #fff8f6 0px, transparent 50%),
+    radial-gradient(at 20% 60%, #ffeae2 0px, transparent 50%);
+}
+
+.orange-background-dark {
+  background: #551905;
+  background-size: 100% 100%;
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(at 15% 45%, #551905 0px, transparent 40%),
+    radial-gradient(at 35% 8%, #551905 0px, transparent 50%),
+    radial-gradient(at 10% 24%, #551905 0px, transparent 50%),
+    radial-gradient(at 20% 60%, #af431f 0px, transparent 50%);
 }
 
 .section > .slant {

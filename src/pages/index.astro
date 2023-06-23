@@ -154,10 +154,9 @@ import AccordionItem from '../components/AccordionItem.astro';
 			</svg>
 		</section>
 		<section
-			class="spot-color-blue-dark spot--inner flex overflow-hidden relative z-10"
-			style="--spot-color: transparent;"
+			class="overflow-hidden relative z-10 relative spot-color-blue-dark spot--inner spot-color-transparent"
 		>
-			<ul role="list" class="flex flex-row flex-auto">
+			<ul role="list" class="flex flex-row flex-auto relative z-10">
 				<li class="box grow flex justify-center">
 					<svg
 						width="171.4"
@@ -333,6 +332,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 					</svg>
 				</li>
 			</ul>
+			<div class="blue-background-dark"></div>
 		</section>
 		<!-- <section
 			class="region center max-inline-size:measure-lg stack"
@@ -391,55 +391,64 @@ import AccordionItem from '../components/AccordionItem.astro';
 			</ul>
 		</section> -->
 		<section
-			class="region stack overflow-hidden relative z-10 spot-color-gray spot--inner"
+			class="region overflow-hidden relative z-10 relative spot-color-purple spot--inner spot-color-transparent"
 			id="how-we-work"
 		>
-			<h2 class="center z-10 text-center">How we work</h2>
-			<ul
-				role="list"
-				class="switcher center max-inline-size:measure-lg justify-center"
-				data-threshold="l"
+			<div
+				class="flex flex-col items-center flow prose wrapper text-center z-10 relative"
 			>
-				<li
-					class="flex flex-col justify-center text-center flow box relative z-10"
-					data-padding="m-l"
-					id="how-01"
+				<h2>How we work</h2>
+			</div>
+			<div class="box z-10 relative">
+				<ul
+					role="list"
+					class="switcher justify-center"
+					data-threshold="l"
 				>
-					<h3>100% async</h3>
-					<p>
-						Do you desire less meetings? Us, too. We work without
-						them.
-					</p>
-				</li>
-				<li
-					class="flex flex-col justify-center text-center flow box relative z-10"
-					data-padding="m-l"
-					id="how-02"
-				>
-					<h3>You're in control</h3>
-					<p>
-						We use Notion to manage requests. View active, queued,
-						and completed requests in a simple layout.
-					</p>
-				</li>
-				<li
-					class="flex flex-col justify-center text-center flow box relative z-10"
-					data-padding="m-l"
-					id="how-03"
-				>
-					<h3>Bring on the team</h3>
-					<p>
-						Invite your whole team. Anyone who should have a seat at
-						the table, and voice their opinion.
-					</p>
-				</li>
-			</ul>
+					<li
+						class="flex flex-col justify-center text-center flow box relative z-10"
+						data-padding="m-l"
+						id="how-01"
+					>
+						<h3>100% async</h3>
+						<p>
+							Do you desire less meetings? Us, too. We work
+							without them.
+						</p>
+					</li>
+					<li
+						class="flex flex-col justify-center text-center flow box relative z-10"
+						data-padding="m-l"
+						id="how-02"
+					>
+						<h3>You're in control</h3>
+						<p>
+							We use Notion to manage requests. View active,
+							queued, and completed requests in a simple layout.
+						</p>
+					</li>
+					<li
+						class="flex flex-col justify-center text-center flow box relative z-10"
+						data-padding="m-l"
+						id="how-03"
+					>
+						<h3>Bring on the team</h3>
+						<p>
+							Invite your whole team. Anyone who should have a
+							seat at the table, and voice their opinion.
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="purple-background"></div>
 		</section>
 		<section
-			class="region stack overflow-hidden relative z-10 spot-color-yellow spot--inner"
+			class="region overflow-hidden relative z-10 relative spot-color-orange spot--inner spot-color-transparent"
 			id="outcomes"
 		>
-			<div class="flow prose wrapper text-center">
+			<div
+				class="flex flex-col items-center flow prose wrapper text-center z-10 relative"
+			>
 				<h2>Outcomes</h2>
 				<p>
 					Designzen was created to be help you scale consistently,
@@ -448,7 +457,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 					on solving mission critical business problems.
 				</p>
 			</div>
-			<div class="box">
+			<div class="box z-10 relative">
 				<ul
 					role="list"
 					class="grid text-center"
@@ -638,13 +647,15 @@ import AccordionItem from '../components/AccordionItem.astro';
 					</li>
 				</ul>
 			</div>
+			<div class="orange-background z-0"></div>
 		</section>
 		<div
-			class="spot-color-blue-dark spot--inner relative z-10"
+			class="spot-color-blue-dark spot--inner spot-color-transparent relative z-10"
 			id="benefits"
-			style="--spot-color: transparent;"
 		>
-			<section class="center region box stack max-inline-size:measure-m">
+			<section
+				class="center region box stack max-inline-size:measure-m z-10 relative"
+			>
 				<div class="flow prose wrapper text-center">
 					<h2>Benefits</h2>
 					<p>
@@ -655,7 +666,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 					</p>
 				</div>
 				<ul role="list" class="grid">
-					<li class="rounded sheen">
+					<li class="flex rounded sheen">
 						<div
 							class="flow box spot-color-blue spot--inner rounded"
 							data-padding="m-l"
@@ -667,7 +678,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 							</p>
 						</div>
 					</li>
-					<li class="rounded sheen">
+					<li class="flex rounded sheen">
 						<div
 							class="flow box spot-color-blue spot--inner rounded"
 							data-padding="m-l"
@@ -679,7 +690,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 							</p>
 						</div>
 					</li>
-					<li class="rounded sheen">
+					<li class="flex rounded sheen">
 						<div
 							class="flow box spot-color-blue spot--inner rounded"
 							data-padding="m-l"
@@ -691,7 +702,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 							</p>
 						</div>
 					</li>
-					<li class="rounded sheen">
+					<li class="flex rounded sheen">
 						<div
 							class="flow box spot-color-blue spot--inner rounded"
 							data-padding="m-l"
@@ -703,7 +714,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 							</p>
 						</div>
 					</li>
-					<li class="rounded sheen">
+					<li class="flex rounded sheen">
 						<div
 							class="flow box spot-color-blue spot--inner rounded"
 							data-padding="m-l"
@@ -714,7 +725,7 @@ import AccordionItem from '../components/AccordionItem.astro';
 							</p>
 						</div>
 					</li>
-					<li class="rounded sheen">
+					<li class="flex rounded sheen">
 						<div
 							class="flow box spot-color-blue spot--inner rounded"
 							data-padding="m-l"
@@ -725,13 +736,18 @@ import AccordionItem from '../components/AccordionItem.astro';
 					</li>
 				</ul>
 			</section>
+			<div class="blue-background-dark z-0"></div>
 		</div>
 		<section
-			class="region stack spot-color-gray spot--inner relative z-10"
+			class="region overflow-hidden relative z-10 relative spot-color-yellow spot--inner spot-color-transparent"
 			id="product-design"
 		>
-			<h2 class="center text-center">Requests fulfilled</h2>
-			<div class="box">
+			<div
+				class="flex flex-col items-center flow prose wrapper text-center z-10 relative"
+			>
+				<h2>Requests fulfilled</h2>
+			</div>
+			<div class="box z-10 relative">
 				<ul
 					role="list"
 					class="grid text-center"
@@ -991,13 +1007,15 @@ import AccordionItem from '../components/AccordionItem.astro';
 					</li>
 				</ul>
 			</div>
+			<div class="yellow-background"></div>
 		</section>
 		<div
-			class="spot-color-blue-dark spot--inner relative z-10"
+			class="spot-color-blue-dark spot--inner spot-color-transparent relative z-10"
 			id="membership"
-			style="--spot-color: transparent;"
 		>
-			<section class="center region box stack max-inline-size:measure-lg">
+			<section
+				class="center region box stack max-inline-size:measure-lg z-10 relative"
+			>
 				<div class="flow prose wrapper text-center">
 					<h2>Membership levels</h2>
 					<p>Choose the plan that's right for you.</p>
@@ -1177,12 +1195,18 @@ import AccordionItem from '../components/AccordionItem.astro';
 					</div>
 				</div>
 			</section>
+			<div class="blue-background-dark"></div>
 		</div>
-		<div class="spot-color-blue spot--inner relative z-10" id="faq">
-			<section class="center region box stack">
-				<div class="flow prose">
-					<h2 class="center text-center">FAQ</h2>
-				</div>
+		<section
+			class="region overflow-hidden relative z-10 relative spot-color-gray spot--inner spot-color-transparent"
+			id="faq"
+		>
+			<div
+				class="flex flex-col items-center flow prose wrapper text-center z-10 relative"
+			>
+				<h2 class="center text-center">FAQ</h2>
+			</div>
+			<div class="center z-10 relative">
 				<Accordion>
 					<AccordionItem
 						header="Why wouldn't I hire a full-time product designer?"
@@ -1271,13 +1295,15 @@ import AccordionItem from '../components/AccordionItem.astro';
 						</p>
 					</AccordionItem>
 				</Accordion>
-			</section>
-		</div>
+			</div>
+			<div class="gray-background"></div>
+		</section>
 		<footer
-			class="spot-color-gray-dark spot--inner relative z-10 overflow-hidden"
-			style="--spot-color: transparent;"
+			class="spot-color-gray-dark spot--inner spot-color-transparent relative z-10 overflow-hidden"
 		>
-			<section class="center region box stack max-inline-size:measure-lg">
+			<section
+				class="center region box stack max-inline-size:measure-lg z-10 relative"
+			>
 				<ul role="list" class="switcher">
 					<li class="flex flex-col flow box items-center justify-end">
 						<div class="flex inline-flow">
@@ -1331,9 +1357,9 @@ import AccordionItem from '../components/AccordionItem.astro';
 					</li>
 				</ul>
 			</section>
+			<div class="blue-background-dark"></div>
 		</footer>
 	</main>
-	<div id="page-background" class="z-0"></div>
 	<script>
 		import Typed from 'typed.js';
 		const typed = new Typed('#people', {
