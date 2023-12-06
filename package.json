@@ -10,7 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.0.3",
     "astro": "^4.0.1",
+    "astro-purgecss": "^4.0.0",
+    "purgecss": "^5.0.0",
     "typed.js": "^2.0.16"
   },
   "devDependencies": {
