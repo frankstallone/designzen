@@ -80,7 +80,7 @@ blockquote:not([class]) p:last-of-type {
 }
 
 svg {
-  height: 2ex;
+  height: 0.8lh;
   width: auto;
   flex: none;
 }
