@@ -246,8 +246,12 @@ import ZenSVG from '../components/ZenSVG.astro';
       </div>
     </section>
     <section class="region">
-      <div class="box z-10 relative">
-        <ul role="list" class="grid text-center">
+      <div class="wrapper z-10 relative">
+        <ul
+          role="list"
+          class="grid text-center"
+          style="--grid-min-item-size: 10rem"
+        >
           <li class="flex flex-col items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -436,7 +440,6 @@ import ZenSVG from '../components/ZenSVG.astro';
           </li>
         </ul>
       </section>
-      <div class="blue-background-dark z-0"></div>
     </div>
     <div class="bg-gray-1100 text-center relative z-10" id="membership">
       <section class="center region wrapper flow z-10 relative">
@@ -480,7 +483,7 @@ import ZenSVG from '../components/ZenSVG.astro';
     </div>
     <footer class="relative z-10 overflow-clip bg-gray-1200 text-white">
       <section class="region wrapper flow z-10 relative">
-        <ul role="list" class="switcher">
+        <ul role="list" class="switcher-3">
           <li class="flex flex-col flow items-center justify-end">
             <div class="flex">
               <object type="image/svg+xml" data="/images/nj.svg" width="50px"
