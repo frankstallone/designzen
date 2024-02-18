@@ -1,0 +1,254 @@
+{
+  "title": "Colors",
+  "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print.",
+  "items": [
+    {
+      "name": "White",
+      "value": "#ffffff"
+    },
+    {
+      "name": "Transparent",
+      "value": "transparent"
+    },
+    {
+      "name": "Gray 100",
+      "value": "#f7f9fa"
+    },
+    {
+      "name": "Gray 200",
+      "value": "#ecf0f2"
+    },
+    {
+      "name": "Gray 300",
+      "value": "#e2e6e8"
+    },
+    {
+      "name": "Gray 400",
+      "value": "#d7dadd"
+    },
+    {
+      "name": "Gray 500",
+      "value": "#cccfd2"
+    },
+    {
+      "name": "Gray 600",
+      "value": "#c1c4c6"
+    },
+    {
+      "name": "Gray 700",
+      "value": "#a1a4a6"
+    },
+    {
+      "name": "Gray 800",
+      "value": "#828486"
+    },
+    {
+      "name": "Gray 900",
+      "value": "#656668"
+    },
+    {
+      "name": "Gray 1000",
+      "value": "#494b4c"
+    },
+    {
+      "name": "Gray 1100",
+      "value": "#2d2d2e"
+    },
+    {
+      "name": "Gray 1200",
+      "value": "#050506"
+    },
+    {
+      "name": "Blue 100",
+      "value": "#f9f9fa"
+    },
+    {
+      "name": "Blue 200",
+      "value": "#eceef0"
+    },
+    {
+      "name": "Blue 300",
+      "value": "#e4e6e9"
+    },
+    {
+      "name": "Blue 400",
+      "value": "#d7dade"
+    },
+    {
+      "name": "Blue 500",
+      "value": "#ccd0d5"
+    },
+    {
+      "name": "Blue 600",
+      "value": "#bfc4cb"
+    },
+    {
+      "name": "Blue 700",
+      "value": "#9da4ae"
+    },
+    {
+      "name": "Blue 800",
+      "value": "#7a8592"
+    },
+    {
+      "name": "Blue 900",
+      "value": "#5a6778"
+    },
+    {
+      "name": "Blue 1000",
+      "value": "#3d4c60"
+    },
+    {
+      "name": "Blue 1100",
+      "value": "#1c2e45"
+    },
+    {
+      "name": "Blue 1200",
+      "value": "#03060a"
+    },
+    {
+      "name": "Yellow 100",
+      "value": "#fef9eb"
+    },
+    {
+      "name": "Yellow 200",
+      "value": "#fcefca"
+    },
+    {
+      "name": "Yellow 300",
+      "value": "#fae4a3"
+    },
+    {
+      "name": "Yellow 400",
+      "value": "#f7d778"
+    },
+    {
+      "name": "Yellow 500",
+      "value": "#f5cb4d"
+    },
+    {
+      "name": "Yellow 600",
+      "value": "#f0bc22"
+    },
+    {
+      "name": "Yellow 700",
+      "value": "#c99e1c"
+    },
+    {
+      "name": "Yellow 800",
+      "value": "#a27f17"
+    },
+    {
+      "name": "Yellow 900",
+      "value": "#7d6212"
+    },
+    {
+      "name": "Yellow 1000",
+      "value": "#5c490d"
+    },
+    {
+      "name": "Yellow 1100",
+      "value": "#372c08"
+    },
+    {
+      "name": "Yellow 1200",
+      "value": "#070501"
+    },
+    {
+      "name": "Purple 100",
+      "value": "#fbf8fa"
+    },
+    {
+      "name": "Purple 200",
+      "value": "#f5edf3"
+    },
+    {
+      "name": "Purple 300",
+      "value": "#efe2eb"
+    },
+    {
+      "name": "Purple 400",
+      "value": "#e7d4e2"
+    },
+    {
+      "name": "Purple 500",
+      "value": "#e1c9db"
+    },
+    {
+      "name": "Purple 600",
+      "value": "#dabbd2"
+    },
+    {
+      "name": "Purple 700",
+      "value": "#c595b8"
+    },
+    {
+      "name": "Purple 800",
+      "value": "#af6f9e"
+    },
+    {
+      "name": "Purple 900",
+      "value": "#9a4884"
+    },
+    {
+      "name": "Purple 1000",
+      "value": "#842069"
+    },
+    {
+      "name": "Purple 1100",
+      "value": "#5a0243"
+    },
+    {
+      "name": "Purple 1200",
+      "value": "#13000e"
+    },
+    {
+      "name": "Orange 100",
+      "value": "#fff8f6"
+    },
+    {
+      "name": "Orange 200",
+      "value": "#ffeae2"
+    },
+    {
+      "name": "Orange 300",
+      "value": "#ffdfd2"
+    },
+    {
+      "name": "Orange 400",
+      "value": "#ffd0bd"
+    },
+    {
+      "name": "Orange 500",
+      "value": "#ffc2ac"
+    },
+    {
+      "name": "Orange 600",
+      "value": "#ffb195"
+    },
+    {
+      "name": "Orange 700",
+      "value": "#fb815b"
+    },
+    {
+      "name": "Orange 800",
+      "value": "#d95e36"
+    },
+    {
+      "name": "Orange 900",
+      "value": "#af431f"
+    },
+    {
+      "name": "Orange 1000",
+      "value": "#852e10"
+    },
+    {
+      "name": "Orange 1100",
+      "value": "#551905"
+    },
+    {
+      "name": "Orange 1200",
+      "value": "#120200"
+    }
+  ]
+}

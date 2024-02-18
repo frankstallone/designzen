@@ -1,0 +1,35 @@
+{
+  "title": "Text Weights",
+  "description": "Helper classes and custom properties for common font weights",
+  "meta": {},
+  "items": [
+    {
+      "name": "Light",
+      "value": 100
+    },
+    {
+      "name": "Normal",
+      "value": 200
+    },
+    {
+      "name": "Medium",
+      "value": 300
+    },
+    {
+      "name": "SemiBold",
+      "value": 400
+    },
+    {
+      "name": "Bold",
+      "value": 500
+    },
+    {
+      "name": "ExtraBold",
+      "value": 700
+    },
+    {
+      "name": "Black",
+      "value": 900
+    }
+  ]
+}

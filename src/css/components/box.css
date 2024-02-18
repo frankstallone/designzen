@@ -1,0 +1,17 @@
+/*
+BOX
+More info: https://every-layout.dev/layouts/box/#the-generator
+*/
+
+.box {
+  @apply text-gray-1200 bg-gray-100;
+  padding: var(--space-s-m);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box.invert {
+  @apply bg-gray-1100 text-gray-100;
+}
