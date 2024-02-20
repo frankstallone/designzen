@@ -121,4 +121,10 @@ main:focus {
   .button {
     @apply block max-w-fit text-gold-1000 tracking-tight text-step-0 font-extrabold bg-gold-vivid-300 py-xs px-xl no-underline rounded-full hover:bg-gold-600 hover:text-gold-1000 disabled:bg-gray-300 disabled:text-gray-700 disabled:hover:bg-gray-400 disabled:hover:text-gray-800;
   }
+
+  #outcomes::after {
+    @apply absolute block w-[20rem] md:w-[25rem] h-[20rem] md:h-[25rem] top-1/2 right-1/2 md:right-[45%] bg-no-repeat z-10 transform translate-x-1/2 md:translate-x-[65%] -translate-y-1/2 text-indigo-400 fill-indigo-300;
+    content: '';
+    background-image: url('/images/circle-lines-01.svg');
+  }
 }

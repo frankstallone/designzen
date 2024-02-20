@@ -38,7 +38,7 @@ const optimizedBackground = await getImage({ src: howItWorksBackground });
       </div>
       <ZenSVG />
     </section>
-    <section class="overflow-clip bg-indigo-900">
+    <section class="overflow-clip bg-indigo-900 region region-space-s">
       <ul role="list" class="repel" style="margin: 0;">
         <li class="box grow flex justify-center bg-indigo-900 text-blue-100">
           <svg
@@ -212,12 +212,12 @@ const optimizedBackground = await getImage({ src: howItWorksBackground });
       </ul>
     </section>
     <section
-      class="region bg-cover bg-center bg-no-repeat bg-gray-1300 bg-blend-color-burn text-orange-100 overflow-clip"
+      class="region region-space-3xl bg-cover bg-center bg-no-repeat bg-gray-1300 bg-blend-color-burn text-orange-100 overflow-clip"
       id="how-it-works"
       style={`background-image: url(${optimizedBackground.src})`}
     >
       <div class="wrapper flex flex-col items-center flow text-center">
-        <h2>How it works</h2>
+        <h2 class="mt-zero">How it works</h2>
       </div>
       <div class="wrapper mt-l">
         <ul role="list" class="grid justify-center" data-layout="thirds">
@@ -244,10 +244,17 @@ const optimizedBackground = await getImage({ src: howItWorksBackground });
         </ul>
       </div>
     </section>
-    <section class="region bg-indigo-900" id="outcomes">
+    <section
+      class="region region-space-3xl bg-indigo-900 relative z-0 overflow-clip"
+      id="outcomes"
+    >
       <div class="wrapper">
-        <div class="box max-w-3xl bg-indigo-vivid-200 text-indigo-1000">
-          <h2 class="font-semibold mt-zero text-left">
+        <div
+          class="relative z-20 box max-w-3xl bg-indigo-vivid-200 text-indigo-1000"
+        >
+          <h2
+            class="font-semibold mt-zero text-left text-step-3 md:text-step-4"
+          >
             Outcomes include happier customers that stay longer, refined
             business positioning, and a charter for product direction.
           </h2>
@@ -411,7 +418,7 @@ const optimizedBackground = await getImage({ src: howItWorksBackground });
     <div class="relative z-10" id="benefits">
       <section class="center region box flow z-10 relative bg-white">
         <div class="flow prose wrapper text-center">
-          <h2>Benefits</h2>
+          <h2 class="mt-zero">Benefits</h2>
         </div>
         <ul role="list" class="grid mt-l">
           <li class="flex">
