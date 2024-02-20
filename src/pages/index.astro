@@ -1,7 +1,12 @@
 ---
+import { getImage } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import ZenSVG from '../components/ZenSVG.astro';
 const date = new Date().getFullYear();
+
+import howItWorksBackground from '../assets/wireframe-sketches-mobile-layout-user-workflow.jpg';
+
+const optimizedBackground = await getImage({ src: howItWorksBackground });
 ---
 
 <Layout>
@@ -22,7 +27,7 @@ const date = new Date().getFullYear();
         </h1>
       </div>
       <div class="center z-10">
-        <div class="box max-w-3xl bg-purple-1100 text-purple-100">
+        <div class="box max-w-3xl bg-mint-vivid-200 text-mint-1000">
           <h2 class="font-semibold mt-zero text-left">
             Design strategy to enhance your mission, vision, and purpose —
             driving exceptional value to your customers.
@@ -31,9 +36,9 @@ const date = new Date().getFullYear();
       </div>
       <ZenSVG />
     </section>
-    <section class="overflow-clip">
-      <ul role="list" class="repel my-zero bg-blue-1100">
-        <li class="box grow flex justify-center bg-blue-1100 text-blue-100">
+    <section class="overflow-clip bg-indigo-900">
+      <ul role="list" class="repel" style="margin: 0;">
+        <li class="box grow flex justify-center bg-indigo-900 text-blue-100">
           <svg
             width="171.4"
             height="40"
@@ -55,7 +60,7 @@ const date = new Date().getFullYear();
               style="fill-rule:nonzero;"></path>
           </svg>
         </li>
-        <li class="box grow flex justify-center bg-blue-1100 text-blue-100">
+        <li class="box grow flex justify-center bg-indigo-900 text-blue-100">
           <svg
             width="89"
             height="40"
@@ -75,7 +80,7 @@ const date = new Date().getFullYear();
             ></path>
           </svg>
         </li>
-        <li class="box grow flex justify-center bg-blue-1100 text-blue-100">
+        <li class="box grow flex justify-center bg-indigo-900 text-blue-100">
           <svg
             width="136"
             height="40"
@@ -92,7 +97,7 @@ const date = new Date().getFullYear();
             ></path>
           </svg>
         </li>
-        <li class="box grow flex justify-center bg-blue-1100 text-blue-100">
+        <li class="box grow flex justify-center bg-indigo-900 text-blue-100">
           <svg
             width="218"
             height="40"
@@ -167,7 +172,7 @@ const date = new Date().getFullYear();
             ></path>
           </svg>
         </li>
-        <li class="box grow flex justify-center bg-blue-1100 text-blue-100">
+        <li class="box grow flex justify-center bg-indigo-900 text-blue-100">
           <svg
             width="194"
             height="40"
@@ -204,14 +209,18 @@ const date = new Date().getFullYear();
         </li>
       </ul>
     </section>
-    <section class="region" id="how-it-works">
+    <section
+      class="region bg-cover bg-center bg-no-repeat bg-gray-1300 bg-blend-color-burn text-orange-100 overflow-clip"
+      id="how-it-works"
+      style={`background-image: url(${optimizedBackground.src})`}
+    >
       <div class="wrapper flex flex-col items-center flow text-center">
         <h2>How it works</h2>
       </div>
       <div class="wrapper mt-l">
         <ul role="list" class="grid justify-center" data-layout="thirds">
           <li
-            class="flex flex-col justify-center text-center flow prose box relative z-10 rounded-2xl"
+            class="flex flex-col justify-center text-center flow prose box relative z-10 bg-orange-100 text-orange-1000"
           >
             <h3 class="mt-zero">Discovery</h3>
             <p>
@@ -219,13 +228,13 @@ const date = new Date().getFullYear();
             </p>
           </li>
           <li
-            class="flex flex-col justify-center text-center flow prose box relative z-10 rounded-2xl"
+            class="flex flex-col justify-center text-center flow prose box relative z-10 bg-orange-100 text-orange-1000"
           >
             <h3 class="mt-zero">Strategy</h3>
             <p>Together we'll diagnose challenges and design a response.</p>
           </li>
           <li
-            class="flex flex-col justify-center text-center flow prose box relative z-10 rounded-2xl"
+            class="flex flex-col justify-center text-center flow prose box relative z-10 bg-orange-100 text-orange-1000"
           >
             <h3 class="mt-zero">Execute</h3>
             <p>We create a plan, prioritize, breakdown and implement.</p>
@@ -233,15 +242,17 @@ const date = new Date().getFullYear();
         </ul>
       </div>
     </section>
-    <section class="region wrapper" id="outcomes">
-      <div class="box max-w-3xl bg-blue-1100 text-blue-100">
-        <h2 class="font-semibold mt-zero text-left">
-          Outcomes include happier customers that stay longer, refined business
-          positioning, and a charter for product direction.
-        </h2>
+    <section class="region bg-indigo-900" id="outcomes">
+      <div class="wrapper">
+        <div class="box max-w-3xl bg-indigo-vivid-200 text-indigo-1000">
+          <h2 class="font-semibold mt-zero text-left">
+            Outcomes include happier customers that stay longer, refined
+            business positioning, and a charter for product direction.
+          </h2>
+        </div>
       </div>
     </section>
-    <section class="region">
+    <section class="region bg-indigo-200 text-indigo-1000">
       <div class="wrapper z-10 relative">
         <ul
           role="list"
@@ -402,19 +413,19 @@ const date = new Date().getFullYear();
         </div>
         <ul role="list" class="grid mt-l">
           <li class="flex">
-            <div class="flex flex-col flow grow box rounded-2xl">
+            <div class="flex flex-col flow grow box">
               <h3 class="text-center mt-zero">Limited capacity</h3>
               <p>Deep thoughtful work only comes with no distractions.</p>
             </div>
           </li>
           <li class="flex">
-            <div class="flex flex-col flow grow box rounded-2xl">
+            <div class="flex flex-col flow grow box">
               <h3 class="text-center mt-zero">Full access</h3>
               <p>Anything you need that I'm capable of doing.</p>
             </div>
           </li>
           <li class="flex">
-            <div class="flex flex-col flow grow box rounded-2xl">
+            <div class="flex flex-col flow grow box">
               <h3 class="text-center mt-zero">Sage staff</h3>
               <p>
                 Decades of experience in human-centered design &amp;
@@ -423,13 +434,13 @@ const date = new Date().getFullYear();
             </div>
           </li>
           <li class="flex">
-            <div class="flex flex-col flow grow box rounded-2xl">
+            <div class="flex flex-col flow grow box">
               <h3 class="text-center mt-zero">Dynamic dues</h3>
               <p>Easy to manage subscription. Pause or cancel any time.</p>
             </div>
           </li>
           <li class="flex">
-            <div class="flex flex-col grow flow box rounded-2xl">
+            <div class="flex flex-col grow flow box">
               <h3 class="text-center mt-zero">Predictable pay</h3>
               <p>Pay the same price, each month.</p>
             </div>
@@ -437,10 +448,10 @@ const date = new Date().getFullYear();
         </ul>
       </section>
     </div>
-    <div class="bg-blue-600 text-center relative z-10" id="membership">
+    <div class="bg-indigo-900 text-center relative z-10" id="membership">
       <section class="center region wrapper flow z-10 relative">
         <div class="max-w-xl mx-auto">
-          <div class="flex flex-col flow box rounded-2xl">
+          <div class="flex flex-col flow box bg-indigo-100 text-indigo-900">
             <h2 class="mt-zero">Monthly</h2>
             <p>
               Simple terms, few clients, maximum focus. 0/2 slots available.
@@ -457,7 +468,7 @@ const date = new Date().getFullYear();
           </div>
         </div>
         <div class="max-w-xl mx-auto">
-          <div class="flex flex-col flow box rounded-2xl">
+          <div class="flex flex-col flow box bg-indigo-100 text-indigo-900">
             <h3 class="mt-zero">Book enrollment call</h3>
             <p>Learn more about designzen, and how it can help you.</p>
             <p class="self-center">
@@ -471,7 +482,7 @@ const date = new Date().getFullYear();
       </section>
     </div>
   </main>
-  <footer class="relative z-10 overflow-clip bg-gray-1200 text-white">
+  <footer class="relative z-10 overflow-clip bg-gray-1400 text-white">
     <section class="region wrapper flow z-10 relative">
       <ul role="list" class="switcher-3">
         <li class="flex flex-col flow items-center justify-end">
