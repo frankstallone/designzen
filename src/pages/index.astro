@@ -486,18 +486,20 @@ const optimizedBackground = await getImage({ src: howItWorksBackground });
     <section class="region wrapper flow z-10 relative">
       <ul role="list" class="switcher-3">
         <li class="flex flex-col flow items-center justify-end">
-          <div class="flex">
+          <div
+            class="flex flex-col items-center md:flex-row md:items-start space-y-2xs md:space-y-zero text-center md:text-left"
+          >
             <object type="image/svg+xml" data="/images/nj.svg" width="50px"
               ><span class="sr-only">New Jersey</span></object
             >
-            <div class="ml-s">
+            <div class="md:ml-s">
               <object
                 type="image/svg+xml"
                 data="/images/designzen-wordmark-light.svg"
                 class="w-2xl"
                 ><span class="sr-only">designzen wordmark</span></object
               >
-              <p>
+              <p class="mt-zero leading-tight">
                 <small class="text-step-000"
                   >designzen is located in the garden state &mdash; New Jersey.</small
                 >
