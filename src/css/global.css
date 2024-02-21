@@ -1,241 +1,34 @@
-/* 
-  Global styles 
+@import 'tailwindcss/base';
 
-  Low-specificity, global styles that apply to the whole 
-  project: https://cube.fyi/css.html
+@import 'global/reset.css';
+@import 'global/fonts.css';
+
+@import 'tailwindcss/components';
+
+@import 'global/variables.css';
+@import 'global/global-styles.css';
+/* 
+See issue: https://github.com/frankstallone/astro-cube-boilerplate/issues/1
+Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/main/src/css/global.css#L11
+
+@import-glob 'blocks/*.css';
+@import-glob 'components/*.css';
+@import-glob 'utilities/*.css'; 
 */
 
-html {
-  scroll-behavior: smooth;
-}
+@import 'blocks/prose.css';
+@import 'components/box.css';
+@import 'components/card-sheen.css';
+@import 'components/cluster.css';
+@import 'components/cover.css';
+@import 'components/flow.css';
+@import 'components/grid.css';
+@import 'components/icon.css';
+@import 'components/repel.css';
+@import 'components/sidebar.css';
+@import 'components/switcher.css';
+@import 'components/wrapper.css';
+@import 'utilities/region.css';
+@import 'utilities/visually-hidden.css';
 
-body {
-  color: var(--color-dark);
-  background: var(--gray100);
-  font-size: var(--step-0);
-  font-family: var(--font-base);
-  font-weight: var(--font-base-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--tracking);
-  position: relative;
-}
-
-/* Base typesetting */
-h1,
-h2,
-h3 {
-  font-family: var(--font-display);
-  line-height: var(--line-height-small);
-  letter-spacing: var(--tracking-s);
-  font-weight: 500;
-}
-
-h1 {
-  font-size: var(--step-5);
-}
-
-h2 {
-  font-size: var(--step-4);
-}
-
-h3 {
-  font-size: var(--step-2);
-}
-
-h4 {
-  font-size: var(--step-1);
-}
-
-/* Set line lengths */
-p,
-li,
-blockquote:not([class]) {
-  max-inline-size: 50ch;
-}
-
-ul {
-  list-style-type: disc;
-  padding-inline-start: var(--space-s);
-}
-
-h1,
-h2,
-h3,
-blockquote {
-  max-inline-size: 30ch;
-  text-wrap: balance;
-}
-
-/* More generic elements */
-blockquote:not([class]) {
-  font-family: var(--font-display);
-  font-size: var(--step-2);
-}
-
-/* Markdown blockquuote:not([class])s aren't ideal, so we're presuming the person quoted is the last p */
-blockquote:not([class]) p:last-of-type {
-  font-family: var(--font-base);
-  font-size: var(--step-1);
-  font-weight: normal;
-}
-
-svg {
-  height: 0.8lh;
-  width: auto;
-  flex: none;
-}
-
-[role='list'] {
-  padding: 0;
-}
-
-/* Base interactive elements */
-
-a {
-  color: currentcolor;
-  text-decoration: none;
-}
-
-a:hover:not([class]) {
-  /* Relatively sized thickness and offset */
-  text-decoration: underline;
-  text-decoration-thickness: max(0.08em, 1px);
-  text-underline-offset: 0.15em;
-}
-
-/* Scroll padding allowance below focused elements 
-  to ensure they are clearly in view */
-:focus {
-  scroll-padding-block-end: 8vh;
-}
-
-:focus-visible {
-  --outline-size: max(2px, 0.15em);
-
-  outline: var(--outline-width, var(--outline-size)) var(--outline-style, solid)
-    var(--outline-color, currentColor);
-  outline-offset: var(--outline-offset, var(--outline-size));
-}
-
-/* Scroll padding allowance above anchor links */
-:target {
-  scroll-padding-block-start: 2rem;
-}
-
-main:focus {
-  outline: none;
-}
-
-/* Base selection styles that invert whatever colours are rendered */
-::selection {
-  background: var(--color-dark);
-  color: var(--color-light);
-}
-
-form > p {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-form > p label {
-  margin-block-end: 0.5rem;
-  margin-inline-end: 0.5rem;
-}
-
-input,
-textarea {
-  border-radius: 4px;
-  border: 1px solid var(--gray700);
-  padding-block: var(--space-2xs);
-  padding-inline: var(--space-xs);
-}
-
-input:focus,
-textarea:focus {
-  outline: 2px solid var(--warmbreeze400);
-}
-
-.button {
-  display: block;
-  max-width: fit-content;
-  --tracking: 0;
-  letter-spacing: var(--tracking);
-  font-size: var(--step--3);
-  font-weight: 600;
-  background: var(--yellow500);
-  /* Hack that needs to be fixed */
-  color: var(--yellow1000);
-  border: none;
-  padding: var(--space-xs) var(--space-xl);
-  text-decoration: none;
-  border-radius: var(--border-radius);
-}
-
-.button:hover,
-.button:active,
-.button:focus {
-  background: var(--yellow600);
-  color: var(--yellow1200);
-}
-
-.button.disabled {
-  background: var(--gray300);
-  color: var(--gray700);
-}
-.button.disabled:hover,
-.button.disabled:active,
-.button.disabled:focus {
-  background: var(--gray400);
-  color: var(--gray800);
-}
-
-#zen {
-  width: 245dvw;
-  height: 245dvh;
-  top: 88%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#how-01::after,
-#how-02::after,
-#how-03::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-}
-#how-01::after {
-  background-image: url(/images/circle-lines-01.svg);
-}
-
-#how-02::after {
-  background-image: url(/images/circle-lines-02.svg);
-}
-
-#how-03::after {
-  background-image: url(/images/circle-lines-03.svg);
-}
-
-#circle-01 {
-  color: red;
-}
-
-@media (max-width: 700px) {
-  #zen {
-    width: 250dvw;
-    height: 250dvh;
-    top: 105%;
-  }
-}
-
-@media (max-width: 400px) {
-  #zen {
-    width: 300dvw;
-    height: 300dvh;
-    top: 78%;
-  }
-}
+@import 'tailwindcss/utilities';

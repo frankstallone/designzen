@@ -1,0 +1,49 @@
+---
+import Picture from 'astro/components/Picture.astro';
+import ZenSVG from './ZenSVG.astro';
+import headshot from '../assets/headshot-01.jpg';
+---
+
+<section class="cover flow text-center relative z-10 overflow-clip">
+  <div class="flow flex flex-col items-center z-10 wrapper text-center">
+    <span class="z-10 font-weight-bold step-0"
+      ><object
+        type="image/svg+xml"
+        data="/images/designzen-wordmark.svg"
+        width="100px"><span class="sr-only">designzen</span></object
+      >
+    </span>
+
+    <h1>
+      Principal <span id="role"> UX</span>
+      <br />Engineer on-demand.
+    </h1>
+  </div>
+  <div class="region wrapper z-10">
+    <div
+      class="switcher"
+      style="--gutter: 0; --switcher-vertical-alignment: center;"
+    >
+      <div
+        class="relative z-20 box max-w-3xl text-left bg-gold-vivid-200 text-gold-1000 md:-mr-s-m"
+      >
+        <p class="mt-zero lg:text-step-2">
+          Frank Stallone contributes end-to-end to product and design strategy
+          with a focus on exceptional user experiences, brand, and accessible
+          web engineering. Frank partners with firms to help them refine their
+          product by aligning incentives with the business goals and customer
+          needs.
+        </p>
+      </div>
+      <Picture
+        src={headshot}
+        alt="Photo of Frank Stallone"
+        height={1664}
+        width={1664}
+        class="object-contain h-auto"
+        format="avif"
+      />
+    </div>
+  </div>
+  <ZenSVG />
+</section>
