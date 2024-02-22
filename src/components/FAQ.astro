@@ -1,5 +1,5 @@
 ---
-import Accordion from './Accordion.astro';
+import AccordionItem from './AccordionItem.astro';
 
 const faqQuestions = [
   {
@@ -43,10 +43,16 @@ const faqQuestions = [
 <section id="faq" aria-labelledby="faqs" class="region">
   <div class="wrapper text-center">
     <h2 id="faqs">Frequently asked questions</h2>
-    {
-      faqQuestions.map((faq, idx) => (
-        <Accordion idx={idx} title={faq.title} description={faq.description} />
-      ))
-    }
+    <div class="mt-m">
+      {
+        faqQuestions.map((faq, idx) => (
+          <AccordionItem
+            idx={idx}
+            title={faq.title}
+            description={faq.description}
+          />
+        ))
+      }
+    </div>
   </div>
 </section>
