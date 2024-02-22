@@ -9,65 +9,64 @@ const date = new Date().getFullYear();
   <main role="main" id="main">
     <Hero />
     <WorkedWith />
-    <section
-      class="region region-space-3xl bg-blue-900 relative z-0 overflow-clip"
-      id="pitch"
-    >
-      <div class="wrapper">
-        <div
-          class="relative z-20 box max-w-3xl bg-mint-vivid-200 text-mint-1000"
-        >
-          <h2
-            class="font-semibold mt-zero text-left text-step-3 md:text-step-4"
+    <div class="bg-gradient-to-bl from-blue-900 to-blue-1000">
+      <section
+        class="region region-space-3xl relative z-0 overflow-clip"
+        id="pitch"
+      >
+        <div class="wrapper">
+          <div
+            class="relative z-20 box max-w-3xl bg-gradient-to-tr from-mint-vivid-200 to-blue-vivid-200 text-mint-1000"
           >
-            Design strategy to enhance your mission, vision, and purpose —
-            driving exceptional value to your customers.
-          </h2>
+            <h2
+              class="font-semibold mt-zero text-left text-step-3 md:text-step-4"
+            >
+              Design strategy to enhance your mission, vision, and purpose —
+              driving exceptional value to your customers.
+            </h2>
+          </div>
         </div>
-      </div>
-    </section>
-    <section
-      class="region bg-blue-900 relative z-0 overflow-clip"
-      id="how-i-work"
-    >
-      <div class="wrapper">
-        <ul
-          role="list"
-          class="relative z-20 grid justify-center mt-xl"
-          data-layout="thirds"
-        >
-          <li
-            class="flex flex-col justify-center text-center flow prose box bg-blue-vivid-200 text-blue-1000 relative z-10"
+      </section>
+      <section class="region relative z-0 overflow-clip" id="how-i-work">
+        <div class="wrapper">
+          <ul
+            role="list"
+            class="relative z-20 grid justify-center mt-xl"
+            data-layout="thirds"
           >
-            <h3 class="mt-zero">Discovery</h3>
-            <p>
-              I get a better understanding of you, and your customers goals.
-            </p>
-          </li>
-          <li
-            class="flex flex-col justify-center text-center flow prose box bg-blue-vivid-200 text-blue-1000 relative z-10"
-          >
-            <h3 class="mt-zero">Strategy</h3>
-            <p>Together we'll diagnose challenges and design a response.</p>
-          </li>
-          <li
-            class="flex flex-col justify-center text-center flow prose box bg-blue-vivid-200 text-blue-1000 relative z-10"
-          >
-            <h3 class="mt-zero">Execute</h3>
-            <p>We create a plan, prioritize, breakdown and implement.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+            <li
+              class="flex flex-col justify-center text-center flow prose box bg-gradient-to-tr from-mint-vivid-100 to-blue-vivid-200 text-blue-1000 relative z-10"
+            >
+              <h3 class="mt-zero">Discovery</h3>
+              <p>
+                I get a better understanding of you, and your customers goals.
+              </p>
+            </li>
+            <li
+              class="flex flex-col justify-center text-center flow prose box bg-gradient-to-tr from-mint-vivid-100 to-blue-vivid-200 text-blue-1000 relative z-10"
+            >
+              <h3 class="mt-zero">Strategy</h3>
+              <p>Together we'll diagnose challenges and design a response.</p>
+            </li>
+            <li
+              class="flex flex-col justify-center text-center flow prose box bg-gradient-to-tr from-mint-vivid-100 to-blue-vivid-200 text-blue-1000 relative z-10"
+            >
+              <h3 class="mt-zero">Execute</h3>
+              <p>We create a plan, prioritize, breakdown and implement.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </main>
 </Layout>
 <section
-  class="region region-space-3xl bg-indigo-900 relative z-0 overflow-clip"
+  class="region region-space-3xl bg-gradient-to-bl from-indigo-900 to-indigo-1000 relative z-0 overflow-clip"
   id="outcomes"
 >
   <div class="wrapper">
     <div
-      class="relative z-20 box max-w-3xl bg-indigo-vivid-200 text-indigo-1000"
+      class="relative z-20 box max-w-3xl bg-gradient-to-tr from-indigo-vivid-200 to-magenta-vivid-200 text-indigo-1000"
     >
       <h2 class="font-semibold mt-zero text-left text-step-3 md:text-step-4">
         Outcomes include happier customers that stay longer, refined business
@@ -76,7 +75,9 @@ const date = new Date().getFullYear();
     </div>
   </div>
 </section>
-<section class="region bg-indigo-200 text-indigo-1000">
+<section
+  class="region bg-gradient-to-tr from-indigo-100 to-indigo-200 text-indigo-1000"
+>
   <div class="wrapper z-10 relative">
     <ul
       role="list"
@@ -232,7 +233,7 @@ const date = new Date().getFullYear();
 </section>
 <div class="relative z-10" id="benefits">
   <section
-    class="center region box flow z-10 relative bg-blue-900 text-blue-100"
+    class="center region box flow z-10 relative bg-gradient-to-bl from-blue-900 to-blue-1000 text-blue-100"
   >
     <div class="flow prose wrapper text-center">
       <h2 class="mt-zero">Benefits</h2>
@@ -240,7 +241,7 @@ const date = new Date().getFullYear();
     <ul role="list" class="grid mt-l">
       <li class="flex">
         <div
-          class="flex flex-col flow grow box text-center bg-mint-200 text-mint-1000"
+          class="flex flex-col flow grow box text-center bg-gradient-to-tr from-mint-vivid-100 to-blue-vivid-200 text-mint-1000"
         >
           <h3 class="mt-zero">Limited capacity</h3>
           <p>Deep thoughtful work only comes with no distractions.</p>
@@ -248,7 +249,7 @@ const date = new Date().getFullYear();
       </li>
       <li class="flex">
         <div
-          class="flex flex-col flow grow box text-center bg-mint-200 text-mint-1000"
+          class="flex flex-col flow grow box text-center bg-gradient-to-tr from-mint-vivid-100 to-blue-vivid-200 text-mint-1000"
         >
           <h3 class="mt-zero">Full access</h3>
           <p>Anything you need that I'm capable of doing.</p>
@@ -256,7 +257,7 @@ const date = new Date().getFullYear();
       </li>
       <li class="flex">
         <div
-          class="flex flex-col flow grow box text-center bg-mint-200 text-mint-1000"
+          class="flex flex-col flow grow box text-center bg-gradient-to-tr from-mint-vivid-100 to-blue-vivid-200 text-mint-1000"
         >
           <h3 class="mt-zero">Sage staff</h3>
           <p>
@@ -283,10 +284,15 @@ const date = new Date().getFullYear();
     </ul>
   </section>
 </div>
-<div class="bg-blue-100 text-center relative z-10" id="membership">
+<div
+  class="bg-gradient-to-bl from-indigo-100 to-blue-100 text-center relative z-10"
+  id="membership"
+>
   <section class="center region wrapper flow z-10 relative">
     <div class="grid" data-layout="thirds">
-      <div class="flex flex-col flow box bg-blue-vivid-200 text-blue-1000">
+      <div
+        class="flex flex-col flow box bg-gradient-to-tr from-mint-vivid-200 to-blue-vivid-200 text-blue-1000"
+      >
         <h2 class="mt-zero">Monthly</h2>
         <p>Simple terms, few clients, maximum focus. 1/2 slots available.</p>
         <h3>$10,000/m</h3>
@@ -299,7 +305,9 @@ const date = new Date().getFullYear();
           >
         </p>
       </div>
-      <div class="flex flex-col flow box bg-blue-vivid-200 text-blue-1000">
+      <div
+        class="flex flex-col flow box bg-gradient-to-tr from-mint-vivid-200 to-blue-vivid-200 text-blue-1000"
+      >
         <h2 class="mt-zero">Weekly</h2>
         <p>Simple terms, few clients, maximum focus. 1/2 slots available.</p>
         <h3>$2,600/m</h3>
@@ -313,7 +321,7 @@ const date = new Date().getFullYear();
         </p>
       </div>
       <div
-        class="flex flex-col flow justify-between box bg-blue-vivid-200 text-blue-1000"
+        class="flex flex-col flow justify-between box bg-gradient-to-tr from-mint-vivid-200 to-blue-vivid-200 text-blue-1000"
       >
         <div class="flex flex-col flow">
           <h2 class="mt-zero text-step-3">Book enrollment call</h2>
