@@ -4,7 +4,10 @@ import ZenSVG from './ZenSVG.astro';
 import headshot from '../assets/headshot-01.jpg';
 ---
 
-<section class="cover flow text-center relative z-10 overflow-clip">
+<section
+  class="cover flow text-center relative z-10 overflow-clip"
+  aria-labelledby="hero"
+>
   <div class="flow flex flex-col items-center z-10 wrapper text-center">
     <span class="z-10 font-weight-bold step-0"
       ><object
@@ -14,7 +17,7 @@ import headshot from '../assets/headshot-01.jpg';
       >
     </span>
 
-    <h1>
+    <h1 id="hero">
       Principal <span id="role"> UX</span>
       <br />Engineer on-demand.
     </h1>
