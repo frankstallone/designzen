@@ -1,0 +1,52 @@
+---
+import Accordion from './Accordion.astro';
+
+const faqQuestions = [
+  {
+    title: 'Why not hire a full time Principal Design Engineer?',
+    description:
+      "The cost of a Principal Design Engineer, on average, is $155k annually. That's not including bonus, health insurance, equiptment, and administrative costs. You may only need design strategy and engineering expertise for a short period, or you may want it all year round but for less. I can typically start within 24 business hours of signing up. Book a call with me first and let's see if we're a good fit.",
+  },
+  {
+    title: 'Can you tell me more about your process?',
+    description:
+      "This is highly dependant on what you're business and user's goals are. On our enrollment call I'll ask you a series of questions to better get to know you and those goals. From there, we can start to see how the engagement will work together. I typically work on one thing at a time, and larger tasks will be broken down to a roadmap so I can keep everyone on the same page",
+  },
+  {
+    title: "How will we know we're a good fit?",
+    description:
+      "I have worked in this field for 20 years. My expertise has ranged from design to development including bridging that gap. I've also helped companies reposition their entire business to align with their customers expectations, and set the tone of user interactions for SaaS apps that established great foundations for user experiences for years to come. Having that agency, enterprise, and startup experience means we'll probably be a good fit. For specifics, book a call with me and we'll discuss more.",
+  },
+  {
+    title: 'How will I know how long engagements will last?',
+    description:
+      "I have worked on multi-year projects and projects that took a few weeks. It all depends on the business goals and/or the user's goals. I recommend we get on a call and discuss what you want to accomplish, I'll ask you some clarifying questions and give you an idea of how long a particular engagement can last.",
+  },
+  {
+    title: 'What are your deliverables?',
+    description:
+      "I have a list above but let me give a little more detail. I won't be able to articulate every form so if you have a question feel free to book a call and we'll discuss more! Anything in the product or design strategy comes in the form of verbal conversations, workshops outcomes, user research findings, technical documentation, outlines or roadmaps. Design assets can be delivered via Figma, Adobe products, PDFs, Notion databases or pages, Keynote presentations, various web optimized formats, or print ready files. Development assets can be delivered via web pages, HTML, CSS, or JavaScript, GitHub repositories, fully built websites, fully coded reusable components, and will use as little, of no, third party dependencies where possible.",
+  },
+  {
+    title: 'How does pausing work?',
+    description:
+      "Monthly subscriptions consist of 30 days. Let me explain with a hypothetical situation. Say you have other objectives to accomplish, and I completed working on a particular series of tasks for you. At this point you can pause the subscription. To do so, let me know you'd like to pause. If you are 15 days into your montly billing period, I'll pause your account. When you return you'll have another 15 days queued up before the next billing period.",
+  },
+  {
+    title: 'Do you offer refunds?',
+    description:
+      "I'll be sharing with you valuable knowledge you'll be able to take action on immediately, even from our first day. Due to that nature, refunds are not aloud.",
+  },
+];
+---
+
+<section id="faq" aria-labelledby="faqs" class="region">
+  <div class="wrapper flow prose text-center">
+    <h2 id="faqs">Frequently asked questions</h2>
+    {
+      faqQuestions.map((faq, idx) => (
+        <Accordion idx={idx} title={faq.title} description={faq.description} />
+      ))
+    }
+  </div>
+</section>
