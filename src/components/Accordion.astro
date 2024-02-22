@@ -12,7 +12,7 @@ const { idx, title, description } = Astro.props;
   x-data={idx === 0
     ? '{ activeAccordion: true }'
     : '{ activeAccordion: false }'}
-  class="box flex flex-col text-left flow prose"
+  class="box flex flex-col text-left flow prose max-w-4xl mx-auto bg-transparent"
 >
   <button
     @click="activeAccordion = !activeAccordion"
