@@ -17,8 +17,8 @@ const { idx, title, description } = Astro.props;
   <button
     @click="activeAccordion = !activeAccordion"
     :aria-expanded="activeAccordion"
-    aria-controls="accordion-panel-1"
-    id="accordion-header-1"
+    aria-controls={`accordion-panel-${idx}`}
+    id={`accordion-header-${idx}`}
     class="accordion-button text-left"
   >
     {title}
@@ -41,18 +41,11 @@ const { idx, title, description } = Astro.props;
   </button>
   <section
     :hidden="!activeAccordion"
-    id="accordion-panel-1"
-    aria-labelledby="accordion-header-1"
+    id={`accordion-panel-${idx}`}
+    aria-labelledby={`accordion-header-${idx}`}
   >
     <p class="accordion-body">
       {description}
     </p>
   </section>
 </div>
-
-<script>
-  // import Alpine from 'alpinejs';
-
-  // window.Alpine = Alpine;
-  // Alpine.start();
-</script>
