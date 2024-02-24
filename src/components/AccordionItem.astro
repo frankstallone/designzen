@@ -3,9 +3,14 @@ type Props = {
   idx: number;
   title: string;
   description: string;
+  color?: string;
 };
 
-const { idx, title, description } = Astro.props;
+const { idx, title, description, color } = Astro.props;
+const buttonClasses = color
+  ? `accordion-button text-left text-${color}-700`
+  : 'accordion-button text-left';
+const contentClasses = color ? `text-${color}-800` : '';
 ---
 
 <div
@@ -19,7 +24,7 @@ const { idx, title, description } = Astro.props;
     :aria-expanded="activeAccordion"
     aria-controls={`accordion-panel-${idx}`}
     id={`accordion-header-${idx}`}
-    class="accordion-button text-left"
+    class={buttonClasses}
   >
     {title}
     <svg
@@ -43,6 +48,7 @@ const { idx, title, description } = Astro.props;
     :hidden="!activeAccordion"
     id={`accordion-panel-${idx}`}
     aria-labelledby={`accordion-header-${idx}`}
+    class={contentClasses}
   >
     <p class="accordion-body">
       {description}
