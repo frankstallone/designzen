@@ -138,4 +138,31 @@ main:focus {
   .accordion-button {
     @apply flex justify-between items-center border-0 border-none bg-transparent p-zero text-step-2 font-semibold;
   }
+
+  /* Animation */
+  .animate-infinite-scroll {
+    animation: infinite-scroll 25s linear infinite;
+  }
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Outcomes mask */
+  .infinite-scroll-mask {
+    --default-color: var(--color-gray-1400);
+
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      var(--mask-color, var(--default-color)) 128px,
+      var(--mask-color, var(--default-color)) calc(100% - 200px),
+      transparent 100%
+    );
+  }
 }
