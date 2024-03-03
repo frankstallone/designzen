@@ -16,9 +16,9 @@ Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/m
 @import-glob 'utilities/*.css'; 
 */
 
+@import 'blocks/card-sheen.css' layer(components);
 @import 'blocks/prose.css' layer(components);
 @import 'components/box.css' layer(components);
-@import 'components/card-sheen.css' layer(components);
 @import 'components/cluster.css' layer(components);
 @import 'components/cover.css' layer(components);
 @import 'components/flow.css' layer(components);
