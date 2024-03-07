@@ -87,58 +87,11 @@ main:focus {
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-dark);
-  color: var(--color-light);
+  background: var(--color-gray-1400);
+  color: var(--color-gray-100);
 }
 
 @layer components {
-  #zen {
-    width: 245dvw;
-    height: 245dvh;
-    top: 88%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  @media (max-width: 700px) {
-    #zen {
-      width: 250dvw;
-      height: 250dvh;
-      top: 105%;
-    }
-  }
-
-  @media (max-width: 400px) {
-    #zen {
-      width: 300dvw;
-      height: 300dvh;
-      top: 78%;
-    }
-  }
-
-  /* Button */
-
-  .button {
-    @apply block max-w-fit text-gold-1000 tracking-tight text-step-0 font-extrabold bg-gold-vivid-300 py-xs px-xl no-underline rounded-full hover:bg-gold-vivid-400 hover:text-gold-1000 disabled:bg-gray-300 disabled:text-gray-700 disabled:hover:bg-gray-400 disabled:hover:text-gray-800;
-  }
-
-  #outcomes::after {
-    @apply absolute block w-[20rem] md:w-[25rem] h-[20rem] md:h-[25rem] top-1/2 right-1/2 md:right-[55%] bg-no-repeat z-10 transform translate-x-1/2 md:translate-x-[40%] -translate-y-1/2 text-indigo-400 fill-indigo-300;
-    content: '';
-    background-image: url('/images/circle-lines-01.svg');
-  }
-
-  #pitch::after {
-    @apply absolute block w-[20rem] md:w-[25rem] h-[20rem] md:h-[25rem] top-1/2 right-1/2 md:right-[45%] bg-no-repeat z-10 transform translate-x-1/2 md:translate-x-[65%] -translate-y-1/2 text-indigo-400 fill-indigo-300;
-    content: '';
-    background-image: url('/images/circle-lines-02.svg');
-  }
-  /* Accordion Button */
-
-  .accordion-button {
-    @apply flex justify-between items-center border-0 border-none bg-transparent p-zero text-step-2 font-semibold;
-  }
-
   /* Animation */
   .animate-infinite-scroll {
     animation: infinite-scroll 25s linear infinite;
@@ -151,18 +104,5 @@ main:focus {
     to {
       transform: translateX(-100%);
     }
-  }
-
-  /* Outcomes mask */
-  .infinite-scroll-mask {
-    --default-color: var(--color-gray-1400);
-
-    mask-image: linear-gradient(
-      to right,
-      transparent 0,
-      var(--mask-color, var(--default-color)) 128px,
-      var(--mask-color, var(--default-color)) calc(100% - 200px),
-      transparent 100%
-    );
   }
 }

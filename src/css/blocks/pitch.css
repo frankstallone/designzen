@@ -1,0 +1,5 @@
+#pitch::after {
+  @apply absolute block w-[20rem] md:w-[25rem] h-[20rem] md:h-[25rem] top-1/2 right-1/2 md:right-[45%] bg-no-repeat z-10 transform translate-x-1/2 md:translate-x-[65%] -translate-y-1/2 text-indigo-400 fill-indigo-300;
+  content: '';
+  background-image: url('/images/circle-lines-02.svg');
+}

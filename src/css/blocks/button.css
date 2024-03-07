@@ -1,0 +1,5 @@
+/* Button */
+
+.button {
+  @apply block max-w-fit text-gold-1000 tracking-tight text-step-0 font-extrabold bg-gold-vivid-300 py-xs px-xl no-underline rounded-full hover:bg-gold-vivid-400 hover:text-gold-1000 disabled:bg-gray-300 disabled:text-gray-700 disabled:hover:bg-gray-400 disabled:hover:text-gray-800;
+}

@@ -1,0 +1,18 @@
+#outcomes::after {
+  @apply absolute block w-[20rem] md:w-[25rem] h-[20rem] md:h-[25rem] top-1/2 right-1/2 md:right-[55%] bg-no-repeat z-10 transform translate-x-1/2 md:translate-x-[40%] -translate-y-1/2 text-indigo-400 fill-indigo-300;
+  content: '';
+  background-image: url('/images/circle-lines-01.svg');
+}
+
+/* Outcomes mask */
+.infinite-scroll-mask {
+  --default-color: var(--color-gray-1400);
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    var(--mask-color, var(--default-color)) 128px,
+    var(--mask-color, var(--default-color)) calc(100% - 200px),
+    transparent 100%
+  );
+}

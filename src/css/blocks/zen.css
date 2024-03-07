@@ -1,0 +1,23 @@
+#zen {
+  width: 245dvw;
+  height: 245dvh;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 700px) {
+  #zen {
+    width: 250dvw;
+    height: 250dvh;
+    top: 105%;
+  }
+}
+
+@media (max-width: 400px) {
+  #zen {
+    width: 300dvw;
+    height: 300dvh;
+    top: 78%;
+  }
+}
