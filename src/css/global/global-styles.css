@@ -6,7 +6,11 @@
 */
 
 body {
-  @apply font-base font-semibold text-gray-1400 m-zero text-step-0 leading-normal;
+  @apply font-base font-medium text-gray-1400 m-zero text-step-0 leading-normal;
+}
+
+strong {
+  font-weight: var(--font-bold);
 }
 
 h1,

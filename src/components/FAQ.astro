@@ -42,17 +42,19 @@ const faqQuestions = [
 
 <section id="faq" aria-labelledby="faqs" class="region">
   <div class="wrapper text-center">
-    <h2 id="faqs">Frequently asked questions</h2>
-    <div class="mt-m text-left">
-      {
-        faqQuestions.map((faq, idx) => (
-          <AccordionItem
-            idx={idx}
-            title={faq.title}
-            description={faq.description}
-          />
-        ))
-      }
+    <div class="sidebar" style="--sidebar-target-width: 20rem;">
+      <h2 id="faqs" class="mt-xl">Frequently asked questions</h2>
+      <div class="mt-m text-left">
+        {
+          faqQuestions.map((faq, idx) => (
+            <AccordionItem
+              idx={idx}
+              title={faq.title}
+              description={faq.description}
+            />
+          ))
+        }
+      </div>
     </div>
   </div>
 </section>
