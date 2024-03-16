@@ -24,11 +24,14 @@ h1 {
 }
 
 h2 {
-  @apply text-step-4;
+  @apply text-step-3;
 }
 
-h3 {
-  @apply text-step-3;
+h3,
+h4,
+h5,
+h6 {
+  @apply text-step-2;
 }
 
 /* Baseline for default links */

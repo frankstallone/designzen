@@ -8,8 +8,8 @@ type Props = {
 
 const { idx, title, description, color } = Astro.props;
 const buttonClasses = color
-  ? `accordion-button text-left text-${color}-700`
-  : 'accordion-button text-left';
+  ? `accordion-button text-left font-bold text-${color}-700`
+  : 'accordion-button text-left font-bold';
 const contentClasses = color ? `text-${color}-800` : '';
 ---
 

@@ -1,5 +1,5 @@
 /* Accordion Button */
 
 .accordion-button {
-  @apply flex justify-between items-center border-0 border-none bg-transparent p-zero text-step-2 font-semibold;
+  @apply flex justify-between items-center border-0 border-none bg-transparent p-zero text-step-2;
 }

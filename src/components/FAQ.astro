@@ -42,7 +42,7 @@ const faqQuestions = [
 
 <section id="faq" aria-labelledby="faqs" class="region">
   <div class="wrapper text-center">
-    <h2 id="faqs" class="text-blue-600">Frequently asked questions</h2>
+    <h2 id="faqs">Frequently asked questions</h2>
     <div class="mt-m text-left">
       {
         faqQuestions.map((faq, idx) => (
@@ -50,7 +50,6 @@ const faqQuestions = [
             idx={idx}
             title={faq.title}
             description={faq.description}
-            color="blue"
           />
         ))
       }
