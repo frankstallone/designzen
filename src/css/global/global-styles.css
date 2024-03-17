@@ -6,7 +6,7 @@
 */
 
 body {
-  @apply font-base font-medium text-gray-1400 m-zero text-step-0 leading-normal;
+  @apply font-base font-semibold text-gray-1400 m-zero text-step-0 leading-normal;
 }
 
 strong {
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-extrabold tracking-tight;
+  @apply font-semibold tracking-tight;
 }
 
 h1 {
