@@ -1,5 +1,5 @@
 ---
-
+import Badge from './Badge.astro';
 ---
 
 <div class="bg-gray-300" id="benefits">
@@ -7,7 +7,7 @@
     <div class="wrapper">
       <div class="grid" data-layout="50-50">
         <div>
-          <h2 class="mt-zero">What you'll get</h2>
+          <Badge containerClasses="ml-zero">What you'll get</Badge>
           <p>
             Our collaboration will lead to bespoke solutions that tackle your
             specific challenges. Expect anything from strategic brand
@@ -45,6 +45,7 @@
 </div>
 <section class="region">
   <div class="wrapper flow">
+    <Badge containerClasses="ml-zero">How I work</Badge>
     <div
       class="pb-m border-solid border border-b-gray-600 border-t-0 border-l-0 border-r-0"
     >

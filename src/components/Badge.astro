@@ -1,0 +1,15 @@
+---
+const { containerClasses } = Astro.props;
+
+const containerClassNames = containerClasses
+  ? `flex py-2xs px-xs rounded-full bg-gray-600 mx-auto w-fit ${containerClasses}`
+  : `flex py-2xs px-xs rounded-full bg-gray-600 mx-auto w-fit`;
+---
+
+<div class={containerClassNames}>
+  <h2
+    class="uppercase font-bold tracking-normal text-step-000 mx-auto inline-block mt-zero"
+  >
+    <slot />
+  </h2>
+</div>

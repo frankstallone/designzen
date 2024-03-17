@@ -1,16 +1,9 @@
 ---
-
+import Badge from './Badge.astro';
 ---
 
-<section class="flex flex-col overflow-clip bg-gray-300 pt-xs">
-  <div class="flex py-2xs px-xs rounded-full bg-gray-600 mx-auto">
-    <h2
-      class="uppercase font-bold tracking-normal text-step-000 mx-auto inline-block mt-zero"
-      id="worked-with"
-    >
-      Trusted by
-    </h2>
-  </div>
+<section class="flex flex-col overflow-clip bg-gray-300 pt-xs" id="worked-with">
+  <Badge>Trusted by</Badge>
   <div class="max-w-full inline-flex flex-nowrap infinite-scroll-mask">
     <ul
       role="list"
