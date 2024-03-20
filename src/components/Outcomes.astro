@@ -29,15 +29,15 @@ import Badge from './Badge.astro';
   aria-labelledby="deliverables"
 >
   <h2 class="sr-only" id="deliverables">Deliverables</h2>
-  <div class="max-w-full inline-flex flex-nowrap infinite-scroll-mask">
+  <div class="flex infinite-scroll-mask select-none overflow-clip gap-l">
     <ul
       role="list"
-      class="flex items-center justify-center md:justify-start text-center animate-infinite-scroll"
+      class="flex shrink-0 items-center justify-between text-center animate-infinite-scroll gap-l min-w-full"
     >
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -48,10 +48,10 @@ import Badge from './Badge.astro';
         >
         Product strategy
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -62,10 +62,10 @@ import Badge from './Badge.astro';
         >
         Brand strategy
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -76,10 +76,10 @@ import Badge from './Badge.astro';
         >
         Frontend architecture
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -90,10 +90,10 @@ import Badge from './Badge.astro';
         >
         Design systems
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -104,10 +104,10 @@ import Badge from './Badge.astro';
         >
         Accessibility audits
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -118,10 +118,10 @@ import Badge from './Badge.astro';
         >
         Knowledge transfer
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -132,10 +132,10 @@ import Badge from './Badge.astro';
         >
         Interviewing
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -146,10 +146,10 @@ import Badge from './Badge.astro';
         >
         Component libraries
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -160,10 +160,10 @@ import Badge from './Badge.astro';
         >
         Workshops
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -174,10 +174,10 @@ import Badge from './Badge.astro';
         >
         Vendor management
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -188,10 +188,10 @@ import Badge from './Badge.astro';
         >
         Prototypes
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -206,13 +206,13 @@ import Badge from './Badge.astro';
     <!-- Second for infinite scroll -->
     <ul
       role="list"
-      class="flex items-center justify-center md:justify-start text-center animate-infinite-scroll"
+      class="flex shrink-0 items-center justify-between text-center animate-infinite-scroll gap-l min-w-full"
       aria-hidden="true"
     >
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -223,10 +223,10 @@ import Badge from './Badge.astro';
         >
         Product strategy
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -237,10 +237,10 @@ import Badge from './Badge.astro';
         >
         Brand strategy
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -251,10 +251,10 @@ import Badge from './Badge.astro';
         >
         Frontend architecture
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -265,10 +265,10 @@ import Badge from './Badge.astro';
         >
         Design systems
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -279,10 +279,10 @@ import Badge from './Badge.astro';
         >
         Accessibility audits
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -293,10 +293,10 @@ import Badge from './Badge.astro';
         >
         Knowledge transfer
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -307,10 +307,10 @@ import Badge from './Badge.astro';
         >
         Interviewing
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -321,10 +321,10 @@ import Badge from './Badge.astro';
         >
         Component libraries
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -335,10 +335,10 @@ import Badge from './Badge.astro';
         >
         Workshops
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -349,10 +349,10 @@ import Badge from './Badge.astro';
         >
         Vendor management
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"
@@ -363,10 +363,10 @@ import Badge from './Badge.astro';
         >
         Prototypes
       </li>
-      <li class="flex flex-col items-center justify-center mx-m">
+      <li class="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="fill-current mb-xs"
+          class="fill-current mr-2xs"
           aria-hidden="true"
           viewBox="0 0 512 512"
           fill="currentColor"

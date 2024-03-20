@@ -119,11 +119,8 @@ main:focus {
   }
 
   @keyframes infinite-scroll {
-    from {
-      transform: translateX(0);
-    }
     to {
-      transform: translateX(-100%);
+      transform: translateX(calc(-100% - var(--space-l)));
     }
   }
 }
