@@ -55,5 +55,5 @@
 }
 
 .skeo-button.skeo-button-primary:hover {
-  background-color: #0073d4;
+  --bg-color: #0073d4;
 }
