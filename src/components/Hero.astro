@@ -2,57 +2,58 @@
 import Picture from 'astro/components/Picture.astro';
 import DesignzenLogo from './DesignzenLogo.astro';
 import headshot from '../assets/headshot-01.jpg';
+import Grid from './Grid.astro';
 ---
 
-<section
-  class="cover flow text-center relative z-10 overflow-clip bg-gray-200"
-  aria-labelledby="hero"
->
-  <div class="flow flex flex-col items-center z-10 wrapper text-center">
-    <span class="z-10 font-weight-bold step-0">
-      <DesignzenLogo />
-    </span>
+<div class="relative bg-gray-200 overflow-clip">
+  <Grid />
+  <section class="cover flow text-center relative z-10" aria-labelledby="hero">
+    <div class="flow flex flex-col items-center z-10 wrapper text-center">
+      <span class="z-10 font-weight-bold step-0">
+        <DesignzenLogo />
+      </span>
 
-    <h1 id="hero" class="text-gold-800">
-      Principal <span id="role"> UX</span>
-      <br />Engineer on-demand.
-    </h1>
-  </div>
-  <div class="region wrapper z-10">
-    <div
-      class="switcher"
-      style="--gutter: 0; --switcher-vertical-alignment: center;"
-    >
-      <div
-        class="relative z-20 box max-w-3xl text-left bg-gradient-to-tr from-gold-vivid-100 to-magenta-vivid-200 text-gold-800 md:-mr-s-m"
-      >
-        <p class="mt-zero text-step-0 md:text-step-1 lg:text-step-2">
-          Designzen sharpens your SaaS brand and product. Tailored for
-          bootstrapped SaaS companies, I blend strategy, design, UX, and
-          front-end development to create clear, impactful results.
-        </p>
-        <p class="md:text-step-0 lg:text-step-1">
-          Covering anything from full brand transformations to specific design
-          tasks, my approach is straightforward, adaptable, and only what you
-          need. The result? A deep connection with your audience that helps you
-          grow your business faster.
-        </p>
-      </div>
-      <Picture
-        src={headshot}
-        alt="Frank Stallone"
-        widths={[240, 540, 720, headshot.width]}
-        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${headshot.width}px`}
-        height={1664}
-        width={1664}
-        class="object-contain h-auto"
-        format="avif"
-        loading="eager"
-        decoding="sync"
-      />
+      <h1 id="hero" class="text-gold-800">
+        Principal <span id="role"> UX</span>
+        <br />Engineer on-demand.
+      </h1>
     </div>
-  </div>
-</section>
+    <div class="region wrapper z-10">
+      <div
+        class="switcher"
+        style="--gutter: 0; --switcher-vertical-alignment: center;"
+      >
+        <div
+          class="relative z-20 box max-w-3xl text-left bg-gradient-to-tr from-gold-vivid-100 to-magenta-vivid-200 text-gold-800 md:-mr-s-m"
+        >
+          <p class="mt-zero text-step-0 md:text-step-1 lg:text-step-2">
+            Designzen sharpens your SaaS brand and product. Tailored for
+            bootstrapped SaaS companies, I blend strategy, design, UX, and
+            front-end development to create clear, impactful results.
+          </p>
+          <p class="md:text-step-0 lg:text-step-1">
+            Covering anything from full brand transformations to specific design
+            tasks, my approach is straightforward, adaptable, and only what you
+            need. The result? A deep connection with your audience that helps
+            you grow your business faster.
+          </p>
+        </div>
+        <Picture
+          src={headshot}
+          alt="Frank Stallone"
+          widths={[240, 540, 720, headshot.width]}
+          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${headshot.width}px`}
+          height={1664}
+          width={1664}
+          class="object-contain h-auto"
+          format="avif"
+          loading="eager"
+          decoding="sync"
+        />
+      </div>
+    </div>
+  </section>
+</div>
 <script>
   import Typed from 'typed.js';
   const typed = new Typed('#role', {
