@@ -17,6 +17,7 @@ Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/m
 */
 
 @import 'blocks/accordion.css';
+@import 'blocks/bullet.css';
 @import 'blocks/button.css';
 @import 'blocks/card-sheen.css' layer(components);
 @import 'blocks/outcomes.css';

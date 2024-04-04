@@ -1,5 +1,5 @@
 ---
-
+import Bullet from './bullet.astro';
 ---
 
 <div id="benefits">
@@ -8,7 +8,7 @@
       <div class="switcher">
         <div class="box flow prose bg-gray-200">
           <h2>What you'll get</h2>
-          <p class="text-gray-1000">
+          <p class="text-gray-1000 text-step-0">
             Our time together will lead to bespoke solutions that tackle your
             specific challenges. From startups needing to clarify their
             customers' worldview to established brands looking to maintain
@@ -17,28 +17,48 @@
             customer experience. I cover:
           </p>
         </div>
-        <ul>
-          <li>
+        <ul role="list">
+          <li class="bullet">
+            <Bullet />
             Branding - from small changes to complete ground-up transformations
           </li>
-          <li>
+          <li class="bullet">
+            <Bullet />
             Branding - from small changes to complete ground-up transformations
           </li>
-          <li>UX design and engineering</li>
-          <li>Front-end architecture and development</li>
-          <li>Marketing websites, designed and built</li>
-          <li>Accessibility audits</li>
-          <li>Product prototypes, designed and built</li>
-          <li>
-            Complete design systems (UI kits, design tokens, guidelines,
-            reference sites, component libraries)
+          <li class="bullet">
+            <Bullet />UX design and engineering
           </li>
-          <li>Workshops and interviews</li>
-          <li>Product strategy</li>
-          <li>Systemizing processes</li>
-          <li>
-            And almost anything else you could need across brand and product
-            strategy, design, and execution.
+          <li class="bullet">
+            <Bullet />Front-end architecture and development
+          </li>
+          <li class="bullet">
+            <Bullet />Marketing websites, designed and built
+          </li>
+          <li class="bullet">
+            <Bullet />Accessibility audits
+          </li>
+          <li class="bullet">
+            <Bullet />Product prototypes, designed and built
+          </li>
+          <li class="bullet">
+            <Bullet />
+            Complete design systems (UI kits, design tokens, guidelines, reference
+            sites, component libraries)
+          </li>
+          <li class="bullet">
+            <Bullet />Workshops and interviews
+          </li>
+          <li class="bullet">
+            <Bullet />Product strategy
+          </li>
+          <li class="bullet">
+            <Bullet />Systemizing processes
+          </li>
+          <li class="bullet">
+            <Bullet />
+            And almost anything else you could need across brand and product strategy,
+            design, and execution.
           </li>
         </ul>
       </div>

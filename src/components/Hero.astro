@@ -1,12 +1,11 @@
 ---
 import Picture from 'astro/components/Picture.astro';
 import DesignzenLogo from './DesignzenLogo.astro';
-import ZenSVG from './ZenSVG.astro';
 import headshot from '../assets/headshot-01.jpg';
 ---
 
 <section
-  class="cover flow text-center relative z-10 overflow-clip"
+  class="cover flow text-center relative z-10 overflow-clip bg-gray-200"
   aria-labelledby="hero"
 >
   <div class="flow flex flex-col items-center z-10 wrapper text-center">
@@ -53,7 +52,6 @@ import headshot from '../assets/headshot-01.jpg';
       />
     </div>
   </div>
-  <ZenSVG />
 </section>
 <script>
   import Typed from 'typed.js';
