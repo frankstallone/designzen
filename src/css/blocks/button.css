@@ -27,33 +27,3 @@
   background-color: var(--color-gray-400);
   color: var(--color-gray-800);
 }
-
-/* Skeo button exploration */
-.skeo-button {
-  --bg-color: var(--color-gray-1100);
-  color: white;
-  background-color: var(--bg-color);
-  text-decoration: none;
-  border-radius: 0.5rem;
-  padding-inline: var(--space-s);
-  padding-block: var(--space-3xs);
-  /* offset-x | offset-y | blur-radius | color */
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.18);
-  /* <inset> | <length> | <length> | <color> */
-  box-shadow:
-    inset 0 1px rgba(255, 255, 255, 0.36),
-    0 0 0 0.5px rgba(26, 26, 26, 1),
-    0 1px 4px rgba(26, 26, 26, 0.48);
-}
-.skeo-button:hover {
-  --bg-color: var(--color-gray-1200);
-}
-
-/* Primary */
-.skeo-button.skeo-button-primary {
-  --bg-color: #0083ed;
-}
-
-.skeo-button.skeo-button-primary:hover {
-  --bg-color: #0073d4;
-}

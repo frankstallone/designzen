@@ -4,7 +4,7 @@ More info: https://every-layout.dev/layouts/box/#the-generator
 */
 
 .box {
-  color: var(--color-gray-1400);
+  color: var(--color-gray-1000);
   background-color: var(--color-gray-300);
   padding: var(--space-s-m);
 }
