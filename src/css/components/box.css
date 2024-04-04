@@ -4,7 +4,8 @@ More info: https://every-layout.dev/layouts/box/#the-generator
 */
 
 .box {
-  @apply text-gray-1200 bg-gray-300;
+  color: var(--color-gray-1400);
+  background-color: var(--color-gray-300);
   padding: var(--space-s-m);
 }
 
@@ -13,5 +14,6 @@ More info: https://every-layout.dev/layouts/box/#the-generator
 }
 
 .box.invert {
-  @apply bg-gray-1100 text-gray-100;
+  color: var(--color-gray-300);
+  background-color: var(--color-gray-1400);
 }

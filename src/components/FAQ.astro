@@ -3,57 +3,100 @@ import AccordionItem from './AccordionItem.astro';
 
 const faqQuestions = [
   {
-    title: 'Why not hire a full time Principal Design Engineer?',
+    title: "Who are you - what's your professional background?",
     description:
-      "The cost of a Principal Design Engineer, on average, is $155k annually. That's not including bonus, health insurance, equiptment, and administrative costs. You may only need design strategy and engineering expertise for a short period, or you may want it all year round but for less. I can typically start within 24 business hours of signing up. Book a call with me first and let's see if we're a good fit.",
+      "I'm a seasoned professional with over 15 years of experience in UX design, front-end development, and brand strategy in both startups and larger organizations. The lean startup space was where I enjoyed myself the most (and was able to make the most impact on a fledgling brand and product), so I now focus on creating cohesive, impactful digital experiences for bootstrapped SaaS companies.",
   },
   {
-    title: 'Can you tell me more about your process?',
+    title: 'Why not just hire a full time Principal Design Engineer?',
     description:
-      "This is highly dependant on what you're business and user's goals are. On our enrollment call I'll ask you a series of questions to better get to know you and those goals. From there, we can start to see how the engagement will work together. I typically work on one thing at a time, and larger tasks will be broken down to a roadmap so I can keep everyone on the same page",
+      "Opting for a full-time Principal Designer Engineer involves not only their standard annual salary (which can be substantial), but also other costs like benefits, taxes, and the resources needed for recruitment and onboarding. There's also a significant time investment in finding the right fit and the commitment required to integrate them into your team. Designzen gives you the expertise and flexibility of a senior hire without the overhead or long-term commitment, making it a cost-effective and efficient solution to your design and development needs.",
   },
   {
-    title: "How will we know we're a good fit?",
+    title: 'Can you work with our in-house team?',
     description:
-      "I have worked in this field for 20 years. My expertise has ranged from design to development including bridging that gap. I've also helped companies reposition their entire business to align with their customers expectations, and set the tone of user interactions for SaaS apps that established great foundations for user experiences for years to come. Having that agency, enterprise, and startup experience means we'll probably be a good fit. For specifics, book a call with me and we'll discuss more.",
+      "Absolutely. Collaboration is at the heart of what I do. Working alongside your in-house team, I'll bring a fresh perspective and specialized expertise. My role is to seamlessly integrate with your people and processes, making sure that my contributions accelerate your team and projects.",
   },
   {
-    title: 'How will I know how long engagements will last?',
+    title: "How will we know you'll be a good fit for us?",
     description:
-      "I have worked on multi-year projects and projects that took a few weeks. It all depends on the business goals and/or the user's goals. I recommend we get on a call and discuss what you want to accomplish, I'll ask you some clarifying questions and give you an idea of how long a particular engagement can last.",
+      "You don't, yet, and making sure we are is important to me. I always start with a free, no-obligation 30-minute Google Meet session. This initial conversation allows us to explore your needs, goals, and the specific challenges you're facing. It's also an opportunity for you to get a feel for how I work and think. By the end of this session we should have a clear sense of whether our approaches and objectives align, and whether I'm the right person to make the impact you need.",
   },
   {
-    title: 'What are your deliverables?',
+    title: "What exactly does a 'total brand transformation' entail?",
     description:
-      "I have a list above but let me give a little more detail. I won't be able to articulate every form so if you have a question feel free to book a call and we'll discuss more! Anything in the product or design strategy comes in the form of verbal conversations, workshops outcomes, user research findings, technical documentation, outlines or roadmaps. Design assets can be delivered via Figma, Adobe products, PDFs, Notion databases or pages, Keynote presentations, various web optimized formats, or print ready files. Development assets can be delivered via web pages, HTML, CSS, or JavaScript, GitHub repositories, fully built websites, fully coded reusable components, and will use as little, if no, third party dependencies where possible.",
+      "A total brand transformation is a comprehensive reevaluation and redesign of your brand's core elements — from its messaging to its market positioning, to customer interaction strategies and visual identity. This process involves workshops, deep research, strategic planning, and creative execution to ensure every aspect of your brand aligns with your business objectives and resonates with your target audience. It's about creating a consistent and compelling brand experience across all touchpoints, strengthening your brand's presence in the market.",
+  },
+  {
+    title: 'How do you integrate product and design strategy?',
+    description:
+      "Integrating product and design strategy involves a holistic approach, where every design decision is made with your product's goals and user needs in mind. This means conducting thorough user analysis, understanding the competitive landscape for refining differentiators, and aligning the product's functionality and aesthetic to deliver a cohesive, user-centered experience. By balancing user desires with business objectives, the strategy ensures that the product not only looks great but also performs effectively in the market.",
+  },
+  {
+    title: 'What is your approach to UX engineering and front-end development?',
+    description:
+      "My approach to UX engineering and front-end development is user-centric and technology-driven. I prioritize creating interfaces that are not only visually appealing but also highly usable and accessible. Utilizing the latest web technologies and adhering to best practices in coding, I ensure that the product's front-end is optimized for performance, cross-browser compatibility, and scalability. Through iterative testing and refinement, the goal is to deliver an engaging user experience that drives user satisfaction and conversion.",
+  },
+  {
+    title:
+      "Can you give an example of how you've systematized processes for other SaaS companies?",
+    description:
+      'For a SaaS client struggling with disjointed workflows between designers and developers, I implemented a design system that standardized UI components and design principles. This systematization facilitated smoother handoffs, ensured visual consistency across the product, and significantly reduced development time for new features. By creating comprehensive documentation and easy-to-use libraries, both teams could work more efficiently and cohesively.',
+  },
+  {
+    title: 'How do you ensure web accessibility in your projects?',
+    description:
+      'Ensuring web accessibility is integral to my process. From the outset, I incorporate accessibility standards and best practices defined by the Web Content Accessibility Guidelines (WCAG) into the design and development phases, focusing on making the product usable for everyone, including those with disabilities. I aim for WCAG 2.1 level AA. This involves appropriate color contrast, semantic HTML, proper use of ARIA labels, ensuring keyboard navigability, and designing for screen readers. Regular audits and user testing help identify and resolve accessibility barriers, ensuring compliance with WCAG guidelines.',
+  },
+  {
+    title: 'What does your brand workshop process look like?',
+    description:
+      "My brand workshop process is an interactive and immersive experience designed to uncover the true essence of your brand. It involves engaging exercises with key stakeholders to explore the brand's substance (our why), brand position (our what & how), and brand expression (our who). Through collaborative discussions, we identify your unique selling points and define your target audience. The outcome is a strategic brand framework that guides all future branding and marketing efforts, ensuring a strong and cohesive brand identity.",
+  },
+  {
+    title: 'How flexible are your subscription plans and what do they include?',
+    description:
+      "My subscription plans are crafted for simplicity and focus, catering to a limited number of clients each month to ensure dedicated attention and maximum impact. With monthly and weekly options available, you can choose the frequency that best suits your project's pace and budget requirements. Every plan includes my full suite of strategy, design, and development services, adaptable to your current needs. Whether it's a one-time project or continuous collaboration, you have the freedom to pause or cancel the partnership anytime, giving you complete control over the scope and scale of our work together.",
+  },
+  {
+    title:
+      'What kind of support can I expect after the completion of the project?',
+    description:
+      "Ongoing support is part of my commitment to your success. Once we launch your project, I'll still be here to provide post-launch guidance. This includes addressing any subsequent tweaks for optimization, answering questions, and ensuring your team feels confident with the new tools or systems in place. If new challenges arise or additional adjustments are needed, I'm ready to step back in to ensure continued success and smooth operation.",
+  },
+  {
+    title: 'How do you measure the impact of your work?',
+    description:
+      "Measuring impact starts with your goals. Whether it's user engagement, increased conversions, or improved customer feedback, I establish key performance indicators (KPIs) early on. This approach ensures that the work we do together delivers real, quantifiable results, aligning with your business objectives and contributing to your growth.",
   },
   {
     title: 'How does pausing work?',
     description:
-      "Monthly subscriptions consist of 30 days. Let me explain with a hypothetical situation. Say you have other objectives to accomplish, and I completed working on a particular series of tasks for you. At this point you can pause the subscription. To do so, let me know you'd like to pause. If you are 15 days into your montly billing period, I'll pause your account. When you return you'll have another 15 days queued up before the next billing period.",
+      "Pausing your subscription is simple and keeps your unused days safe. Say you need to focus elsewhere, and you're mid-way through your subscription period — just let me know, and we'll hit pause. You won't lose the remaining time. When you're ready to restart, any days you had left will be waiting, ensuring you get full value from the time you've already invested.",
   },
   {
     title: 'Do you offer refunds?',
     description:
-      "I'll be sharing with you valuable knowledge you'll be able to take action on immediately, even from our first day. Due to that nature, refunds are not allowed.",
+      'Given the immediate value and actionable knowledge provided from day one, refunds are not part of the service offering. Each engagement is designed to deliver insights and strategies that you can use right away, ensuring that you see value from the very start of our partnership.',
   },
 ];
 ---
 
-<section id="faq" aria-labelledby="faqs" class="region">
+<section id="faq" class="region">
   <div class="wrapper text-center">
-    <h2 id="faqs" class="text-blue-600">Frequently asked questions</h2>
-    <div class="mt-m text-left">
-      {
-        faqQuestions.map((faq, idx) => (
-          <AccordionItem
-            idx={idx}
-            title={faq.title}
-            description={faq.description}
-            color="blue"
-          />
-        ))
-      }
+    <div class="sidebar" style="--sidebar-target-width: 20rem;">
+      <h2 id="faqs" class="mt-xl">Frequently asked questions</h2>
+      <div class="mt-m text-left">
+        {
+          faqQuestions.map((faq, idx) => (
+            <AccordionItem
+              idx={idx}
+              title={faq.title}
+              description={faq.description}
+            />
+          ))
+        }
+      </div>
     </div>
   </div>
 </section>

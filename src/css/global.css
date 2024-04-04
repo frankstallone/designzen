@@ -20,7 +20,6 @@ Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/m
 @import 'blocks/button.css';
 @import 'blocks/card-sheen.css' layer(components);
 @import 'blocks/outcomes.css';
-@import 'blocks/pitch.css';
 @import 'blocks/prose.css' layer(components);
 @import 'blocks/zen.css';
 @import 'components/box.css' layer(components);

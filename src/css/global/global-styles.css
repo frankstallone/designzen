@@ -6,7 +6,16 @@
 */
 
 body {
-  @apply font-base font-semibold text-gray-1400 m-zero text-step-0 leading-normal;
+  font-family: var(--font-base);
+  font-weight: var(--font-semibold);
+  color: var(--color-gray-1400);
+  margin: 0;
+  font-size: var(--size-step-00);
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: var(--font-bold);
 }
 
 h1,
@@ -15,25 +24,36 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold tracking-tight;
+  font-family: var(--font-base);
+  font-weight: var(--font-semibold);
+  letter-spacing: -0.025em;
+  margin-top: 0;
 }
 
 h1 {
-  @apply text-step-5;
+  font-size: var(--size-step-5);
   max-inline-size: 50ch;
 }
 
 h2 {
-  @apply text-step-4;
+  font-size: var(--size-step-3);
 }
 
-h3 {
-  @apply text-step-3;
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--size-step-2);
 }
 
 /* Baseline for default links */
 a {
-  @apply underline hover:no-underline text-gray-1400;
+  text-decoration: underline;
+  color: var(--color-gray-1400);
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 a:not([class]) {
@@ -48,7 +68,9 @@ blockquote:not([class]) {
   max-inline-size: 50ch;
 }
 blockquote:not([class]) {
-  @apply text-step-2 ml-zero pl-xs-s;
+  font-size: var(--size-step-2);
+  margin-inline-start: 0;
+  padding-inline-start: var(--space-xs-s);
   border-left: max(0.08em, 1px) solid var(--color-gray-1400);
 }
 
@@ -98,11 +120,8 @@ main:focus {
   }
 
   @keyframes infinite-scroll {
-    from {
-      transform: translateX(0);
-    }
     to {
-      transform: translateX(-100%);
+      transform: translateX(calc(-100% - var(--space-l)));
     }
   }
 }
