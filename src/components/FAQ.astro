@@ -86,7 +86,9 @@ const faqQuestions = [
   <div class="wrapper text-center">
     <div class="sidebar" style="--sidebar-target-width: 20rem;">
       <h2 id="faqs" class="mt-xl">Frequently asked questions</h2>
-      <div class="mt-m text-left">
+      <div
+        class="mt-m text-left border divide-y border-b divide-gray-600 border-gray-600"
+      >
         {
           faqQuestions.map((faq, idx) => (
             <AccordionItem
