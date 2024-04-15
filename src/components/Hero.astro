@@ -8,30 +8,39 @@ import Grid from './Grid.astro';
 <div class="relative bg-gray-200 overflow-clip">
   <Grid />
   <section class="cover flow text-center relative z-10" aria-labelledby="hero">
-    <div class="flow flex flex-col items-center z-10 wrapper text-center">
+    <div class="flow flex flex-col items-center z-10 wrapper text-center pb-m">
       <span class="z-10 font-weight-bold step-0">
         <DesignzenLogo />
       </span>
-
-      <h1 id="hero" class="text-gold-800">
+      <h1 class="text-gold-800 md:text-step-5">
         Principal <span id="role"> UX</span>
         <br />Engineer on-demand.
       </h1>
+      <a href="#membership" class="button">See plans</a>
     </div>
-    <div class="region wrapper z-10">
+    <div class="wrapper z-10">
       <div
         class="switcher"
         style="--gutter: 0; --switcher-vertical-alignment: center;"
       >
-        <div
-          class="relative z-20 box max-w-3xl text-left bg-gradient-to-tr from-gold-vivid-100 to-magenta-vivid-200 text-gold-800 md:-mr-s-m"
-        >
-          <p class="mt-zero text-step-0 md:text-step-1 lg:text-step-2">
-            Designzen sharpens your SaaS brand and product. Tailored for
-            bootstrapped SaaS companies, I blend strategy, design, UX, and
-            front-end development to create clear, impactful results.
+        <div class="flow prose" style="--flow-space: var(--space-s-m);">
+          <p
+            class="mt-zero text-step-000 md:text-left mx-auto md:ml-zero font-extrabold uppercase text-magenta-vivid-700"
+          >
+            Designzen sharpens your SaaS brand and product
           </p>
-          <p class="md:text-step-0 lg:text-step-1">
+          <div
+            class="relative z-20 box max-w-3xl text-left bg-gradient-to-tr from-gold-vivid-100 to-magenta-vivid-200 text-gold-800 md:-mr-s-m"
+          >
+            <h2
+              class="mt-zero text-step-0 md:text-step-1 lg:text-step-2 leading-tight"
+            >
+              Tailored for bootstrapped SaaS companies, I blend strategy,
+              design, UX, and front-end development to create clear, impactful
+              results.
+            </h2>
+          </div>
+          <p class="leading-tight text-left">
             Covering anything from full brand transformations to specific design
             tasks, my approach is straightforward, adaptable, and only what you
             need. The result? A deep connection with your audience that helps

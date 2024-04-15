@@ -32,7 +32,7 @@ h6 {
 }
 
 h1 {
-  font-size: var(--size-step-5);
+  font-size: var(--size-step-4);
   max-inline-size: 50ch;
 }
 
