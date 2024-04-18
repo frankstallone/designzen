@@ -20,6 +20,8 @@ Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/m
 @import 'blocks/bullet.css';
 @import 'blocks/button.css';
 @import 'blocks/card-sheen.css' layer(components);
+@import 'blocks/embel.css' layer(components);
+@import 'blocks/glass-container.css' layer(components);
 @import 'blocks/outcomes.css';
 @import 'blocks/prose.css' layer(components);
 @import 'blocks/zen.css';

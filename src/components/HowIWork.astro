@@ -1,26 +1,39 @@
 ---
-
+import Grid from './Grid.astro';
 ---
 
-<section class="region bg-gray-300" id="outcomes">
-  <div class="wrapper">
-    <div class="box flow prose bg-gray-100 max-w-fit">
-      <h2>How I work</h2>
-      <p class="text-gray-1000 text-step-0">
-        15 years of experience allows me to cover everything from high-level
-        strategy to the tangible outcomes you need right now. Through a
-        collaborative exploration of your current position, and recognizing that
-        not every challenge requires a full brand overhaul, I offer focused
-        interventions in areas that make the most difference—like creating
-        streamlined design systems, enhancing UI/UX for better user engagement,
-        or implementing strategic product advice for those with market fit but
-        needing brand elevation. This flexibility ensures we focus only on what
-        matters for your growth.
-      </p>
-      <p class="text-gray-1000">
-        (and hey, if you <em>do</em> need a total brand overhaul - I can do that
-        too)
-      </p>
+<section class="relative bg-gray-200 overflow-clip" id="outcomes">
+  <Grid />
+  <div class="wrapper region">
+    <div class="relative w-fit">
+      <!-- <div
+        class="absolute left-1/3 top-0 z-0 h-2/3 w-2/3 bg-magenta-vivid-700/50 blur-3xl filter"
+      >
+      </div>
+      <div
+        class="absolute left-0 top-1/3 z-0 h-2/3 w-2/3 bg-gold-vivid-600/50 blur-3xl filter"
+      >
+      </div> -->
+      <div
+        class="box flow prose bg-gray-100 max-w-fit relative z-10 text-magenta-900"
+      >
+        <h2>How I work</h2>
+        <p class="text-step-0">
+          15 years of experience allows me to cover everything from high-level
+          strategy to the tangible outcomes you need right now. Through a
+          collaborative exploration of your current position, and recognizing
+          that not every challenge requires a full brand overhaul, I offer
+          focused interventions in areas that make the most difference—like
+          creating streamlined design systems, enhancing UI/UX for better user
+          engagement, or implementing strategic product advice for those with
+          market fit but needing brand elevation. This flexibility ensures we
+          focus only on what matters for your growth.
+        </p>
+        <p class="">
+          (and hey, if you <em>do</em> need a total brand overhaul - I can do that
+          too)
+        </p>
+      </div>
     </div>
   </div>
 </section>
