@@ -3,6 +3,8 @@
 }
 
 .glass-container::before {
-  @apply absolute -inset-[10px] z-10 border border-gray-100/20 bg-gray-200/10 backdrop-blur-md;
+  @apply -inset-[10px] border border-gray-100/20 bg-gray-200/10 backdrop-blur-md;
+  z-index: 10;
+  position: absolute;
   content: '';
 }
