@@ -1,14 +1,19 @@
 ---
 import Bullet from './bullet.astro';
+import Grid from './Grid.astro';
 ---
 
-<div id="benefits">
+<div
+  class="relative overflow-clip border-dashed border-b-2 border-b-gray-200"
+  id="benefits"
+>
+  <Grid />
   <section class="region">
     <div class="wrapper">
       <div class="switcher">
         <div class="box flow prose bg-gray-200">
           <h2>What you'll get</h2>
-          <p class="text-gray-1000 text-step-0">
+          <p class="text-step-0">
             Our time together will lead to bespoke solutions that tackle your
             specific challenges. From startups needing to clarify their
             customers' worldview to established brands looking to maintain

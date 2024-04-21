@@ -9,10 +9,6 @@ More info: https://every-layout.dev/layouts/box/#the-generator
   padding: var(--space-s-m);
 }
 
-.box * {
-  color: inherit;
-}
-
 .box.invert {
   color: var(--color-gray-300);
   background-color: var(--color-gray-1400);
