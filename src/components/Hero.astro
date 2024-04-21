@@ -2,6 +2,7 @@
 import Picture from 'astro/components/Picture.astro';
 import DesignzenLogo from './DesignzenLogo.astro';
 import headshot from '../assets/headshot-01.jpg';
+import designs from '../assets/designzen-montage-hero@2x.png';
 import Grid from './Grid.astro';
 ---
 
@@ -48,12 +49,10 @@ import Grid from './Grid.astro';
           </p>
         </div>
         <Picture
-          src={headshot}
-          alt="Frank Stallone"
-          widths={[240, 540, 720, headshot.width]}
-          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${headshot.width}px`}
-          height={1664}
-          width={1664}
+          src={designs}
+          alt="Various design assets"
+          widths={[240, 540, 720, designs.width]}
+          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${designs.width}px`}
           class="object-contain h-auto"
           formats={['avif', 'webp']}
           loading="eager"
