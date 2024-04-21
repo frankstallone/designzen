@@ -18,6 +18,7 @@
     "@astrojs/sitemap": "^3.1.2",
     "@astrojs/tailwind": "^5.1.0",
     "@types/alpinejs": "^3.13.6",
+    "@zachleat/details-utils": "^2.0.2",
     "alpinejs": "^3.13.5",
     "astro": "^4.6.1",
     "slugify": "^1.6.6",
