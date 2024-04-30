@@ -1,7 +1,7 @@
 ---
 import Picture from 'astro/components/Picture.astro';
 import DesignzenLogo from './DesignzenLogo.astro';
-import designs from '../assets/designzen-montage-hero@2x.png';
+import mockup from '../assets/roll-by-adp-chat-mockup-2024.jpg';
 import Grid from './Grid.astro';
 ---
 
@@ -30,7 +30,7 @@ import Grid from './Grid.astro';
             Designzen sharpens your SaaS brand and product
           </p>
           <div
-            class="relative z-20 box max-w-3xl text-left bg-gradient-to-tr from-gold-vivid-100 to-magenta-vivid-200 text-gold-800"
+            class="relative z-20 box max-w-3xl text-left bg-gradient-to-tr from-gold-vivid-100 to-magenta-vivid-200 text-gold-800 md:-mr-l"
           >
             <h2
               class="mt-zero text-step-0 md:text-step-1 lg:text-step-2 leading-tight"
@@ -48,10 +48,10 @@ import Grid from './Grid.astro';
           </p>
         </div>
         <Picture
-          src={designs}
+          src={mockup}
           alt="Various design assets"
-          widths={[240, 540, 720, designs.width]}
-          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${designs.width}px`}
+          widths={[240, 540, 720, mockup.width]}
+          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${mockup.width}px`}
           class="object-contain h-auto"
           formats={['avif', 'webp']}
           loading="eager"
