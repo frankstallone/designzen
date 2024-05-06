@@ -9,6 +9,15 @@ import Membership from '../components/Membership.astro';
 import FAQ from '../components/FAQ.astro';
 import Footer from '../components/Footer.astro';
 import Deliverables from '../components/Deliverables.astro';
+import Grid from '../components/Grid.astro';
+import Picture from 'astro/components/Picture.astro';
+import loumarc from '../assets/marketing-website-design.png';
+import wireframe from '../assets/wireframes@2x.png';
+import icecream from '../assets/responsive-web-design.png';
+import colorPalette from '../assets/color-palettes@2x.png';
+import btcLogos from '../assets/btc-squared-03@2x.png';
+import appDesign from '../assets/app-ui@2x.png';
+import logoSketch from '../assets/njc-squared-03@2x.png';
 ---
 
 <Layout>
@@ -17,6 +26,104 @@ import Deliverables from '../components/Deliverables.astro';
     <WorkedWith />
     <Tension />
     <HowIWork />
+    <div
+      class="relative overflow-clip border-dashed border-b-2 border-b-gray-200"
+      id="benefits"
+    >
+      <Grid />
+      <div class="wrapper">
+        <div
+          class="flex flex-col gap-s md:grid"
+          data-layout="twelfths"
+          style="--gutter: var(--space-xs);"
+        >
+          <Picture
+            src={loumarc}
+            alt="Marketing website design"
+            widths={[240, 540, 720, loumarc.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${loumarc.width}px`}
+            class="object-cover h-auto md:row-start-2 md:row-span-2 md:col-start-1 md:col-span-4"
+            pictureAttributes={{
+              class:
+                'object-cover h-auto md:row-start-2 md:row-span-2 md:col-start-1 md:col-span-4',
+            }}
+            formats={['avif', 'webp']}
+          />
+          <Picture
+            src={wireframe}
+            alt="Wireframes for a marketing website design"
+            widths={[240, 540, 720, wireframe.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${wireframe.width}px`}
+            class="object-cover h-auto md:row-start-1 md:row-span-4 md:col-start-5 md:col-span-4"
+            pictureAttributes={{
+              class:
+                'object-cover h-auto md:row-start-1 md:row-span-4 md:col-start-5 md:col-span-4',
+            }}
+            formats={['avif', 'webp']}
+          />
+          <Picture
+            src={icecream}
+            alt="Marketing website design"
+            widths={[240, 540, 720, icecream.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${icecream.width}px`}
+            class="object-cover h-auto md:row-start-3 md:row-span-6 md:col-start-9 md:col-span-4"
+            pictureAttributes={{
+              class:
+                'object-cover h-auto md:row-start-3 md:row-span-6 md:col-start-9 md:col-span-4',
+            }}
+            formats={['avif', 'webp']}
+          />
+          <Picture
+            src={colorPalette}
+            alt="Color palettes for a marketing website design"
+            widths={[240, 540, 720, colorPalette.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${colorPalette.width}px`}
+            class="object-cover h-auto md:row-start-5 md:row-span-2 md:col-start-5 md:col-span-2"
+            pictureAttributes={{
+              class:
+                'object-cover h-auto md:row-start-5 md:row-span-2 md:col-start-5 md:col-span-2',
+            }}
+            formats={['avif', 'webp']}
+          />
+          <Picture
+            src={btcLogos}
+            alt="Logos in real life application"
+            widths={[240, 540, 720, btcLogos.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${btcLogos.width}px`}
+            class="object-cover h-auto md:row-start-5 md:row-span-2 md:col-start-7 md:col-span-2"
+            pictureAttributes={{
+              class:
+                'object-cover h-auto md:row-start-5 md:row-span-2 md:col-start-7 md:col-span-2',
+            }}
+            formats={['avif', 'webp']}
+          />
+          <Picture
+            src={appDesign}
+            alt="UI UX design for a mobile app"
+            widths={[240, 540, 720, appDesign.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${appDesign.width}px`}
+            class="object-cover h-auto md:row-start-1 md:row-span-2 md:col-start-9 md:col-span-2"
+            pictureAttributes={{
+              class:
+                'object-cover h-auto md:row-start-1 md:row-span-2 md:col-start-9 md:col-span-2',
+            }}
+            formats={['avif', 'webp']}
+          />
+          <Picture
+            src={logoSketch}
+            alt="Logo design geometric layout"
+            widths={[240, 540, 720, logoSketch.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${logoSketch.width}px`}
+            class="object-cover h-auto md:row-start-1 md:row-span-2 md:col-start-11 md:col-span-2"
+            pictureAttributes={{
+              class:
+                'object-cover h-auto md:row-start-1 md:row-span-2 md:col-start-11 md:col-span-2',
+            }}
+            formats={['avif', 'webp']}
+          />
+        </div>
+      </div>
+    </div>
     <WhatYoullGet />
     <Deliverables />
     <Membership />
